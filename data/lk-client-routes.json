@@ -1,7 +1,7 @@
 {
   "sourcePage": "https://lk.ssau.ru/",
-  "sourceAssetsCount": 33,
-  "sourceAssetsBytes": 3091544,
+  "sourceAssetsCount": 40,
+  "sourceAssetsBytes": 3181840,
   "retrievedAt": "2026-10-27",
   "classification": "authenticated-client-route-candidates",
   "routeCandidateCount": 275,
@@ -14,6 +14,14 @@
     "GET": 178,
     "PATCH": 24
   },
+  "additionalPagesChecked": [
+    "/schedule",
+    "/study/basic-education-plan",
+    "/library/literature-search",
+    "/info/news"
+  ],
+  "additionalAssetsCount": 7,
+  "limitations": "Extracted API path literals from JavaScript assets referenced by the authenticated home page and four sections. Only path strings with nearby HTTP-client calls receive a method. This is not proof every route is enabled for the current account or responds successfully; some modules may require other roles. No response bodies, account data, credentials or cookie values are stored. Mutating routes are listed but were not called.",
   "verifiedSafeRequest": {
     "method": "GET",
     "path": "/api/proxy/dictionaries?slug=timetable_lesson_times",
@@ -26,7 +34,6 @@
     ],
     "valuesStored": false
   },
-  "limitations": "Extracted API path literals from 33 JavaScript assets served to the authenticated home page. Only route strings with nearby HTTP-client call evidence receive a method. This is not proof every route is enabled for the current account or responds successfully; some modules may require other roles. No response bodies, account data, credentials or cookie values are stored. Mutating routes are listed but were not called.",
   "routes": [
     {
       "path": "/api/account/logout",

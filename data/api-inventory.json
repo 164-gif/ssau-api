@@ -210,10 +210,10 @@
           "path": "/api/{clientRoute}",
           "authentication": "login-verified; route-specific access-varies-and-is-not-verified",
           "capabilities": ["see data/lk-client-routes.json for 275 client-declared API path candidates"],
-          "status": "extracted-from-33-js-assets; 271-paths-have-nearby-http-method-evidence",
+          "status": "extracted-from-40-js-assets-on-five-pages; 271-paths-have-nearby-http-method-evidence",
           "details": "docs/apis/student-cabinet-client-api.md",
           "lastVerified": "2026-10-27",
-          "notes": "The route list contains method and path candidates only. No personal API responses or mutating methods were requested."
+          "notes": "The route list contains method and path candidates only. It covers the authenticated home page, schedule, basic education plan, library literature search and news pages. No personal API responses or mutating methods were requested."
         }
       ],
       "observations": [
