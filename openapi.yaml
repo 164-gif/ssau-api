@@ -1,0 +1,145 @@
+openapi: 3.1.0
+info:
+  title: Samara University public news API
+  version: "1.0.0"
+  description: >-
+    OpenAPI description of the publicly documented read-only news endpoint on
+    the Samara University website. The university documents this endpoint at
+    https://ssau.ru/api_docs. Only a subset of parameter combinations has been
+    verified independently.
+servers:
+  - url: https://ssau.ru
+paths:
+  /api/news/:
+    get:
+      operationId: listNews
+      summary: List or filter public university news
+      description: >-
+        The same endpoint supports listing, title search, lookup by ID, date and
+        type filters, tags, language, slideshow filtering, and XML output.
+      parameters:
+        - name: id
+          in: query
+          required: false
+          description: Return the news item with this identifier.
+          schema:
+            type: integer
+        - name: q
+          in: query
+          required: false
+          description: Case-insensitive substring search in the title.
+          schema:
+            type: string
+        - name: limit
+          in: query
+          required: false
+          description: Maximum number of returned items; documented maximum is 50.
+          schema:
+            type: integer
+            default: 10
+            minimum: 1
+            maximum: 50
+        - name: index
+          in: query
+          required: false
+          description: Starting result index. Pagination boundary semantics need more verification.
+          schema:
+            type: integer
+            default: 0
+            minimum: 0
+        - name: date-start
+          in: query
+          required: false
+          description: Earliest publication date, inclusive according to the documentation.
+          schema:
+            type: string
+            format: date
+        - name: date-end
+          in: query
+          required: false
+          description: Latest publication date, inclusive according to the documentation.
+          schema:
+            type: string
+            format: date
+        - name: type
+          in: query
+          required: false
+          schema:
+            type: string
+            enum: [all, news, announcements, sitenews]
+            default: all
+        - name: tags
+          in: query
+          required: false
+          description: Comma-separated tags; spaces in tag names should be replaced with underscores.
+          schema:
+            type: string
+        - name: lang
+          in: query
+          required: false
+          schema:
+            type: string
+            enum: [ru, en]
+            default: ru
+        - name: slideshow
+          in: query
+          required: false
+          schema:
+            type: boolean
+            default: false
+        - name: xml
+          in: query
+          required: false
+          description: Set true to request XML rather than JSON.
+          schema:
+            type: boolean
+            default: false
+      responses:
+        "200":
+          description: News results in JSON by default, or XML when xml=true.
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/NewsItem"
+            text/xml:
+              schema:
+                type: string
+        default:
+          description: Error response; exact error schema is not documented.
+components:
+  schemas:
+    NewsItem:
+      type: object
+      description: Fields listed in official documentation; live field names can differ.
+      properties:
+        id:
+          type: integer
+        title:
+          type: string
+        descr:
+          type: string
+        pubText:
+          type: string
+          description: Publication body, commonly HTML.
+        pubDate:
+          type: string
+          description: Publication date and time in YYYY-MM-DD hh:mm:ss format.
+        pic:
+          type: string
+          format: uri
+        type:
+          type: string
+        slideshow:
+          type: [integer, string]
+        slidewhow:
+          type: [integer, string]
+          description: Observed live spelling; official docs use slideshow.
+        slide:
+          type: string
+        tags:
+          type: string
+        url:
+          type: string
+          format: uri

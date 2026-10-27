@@ -6,14 +6,14 @@
     {
       "id": "main-portal",
       "name": "Основной сайт Самарского университета",
-      "baseUrls": ["https://ssau.ru"],
+      "baseUrls": ["https://ssau.ru", "https://www.ssau.ru"],
       "status": "partially-investigated",
       "routes": [
         {
           "id": "public-news",
           "method": "GET",
           "path": "/api/news/",
-          "contentTypes": ["application/json", "application/xml"],
+          "contentTypes": ["application/json", "text/xml"],
           "authentication": "not-required-for-verified-public-requests",
           "capabilities": [
             "list-news",
@@ -37,6 +37,13 @@
       "id": "schedule-page",
       "name": "Публичная страница расписания",
       "baseUrls": ["https://ssau.ru/rasp"],
+      "status": "page-checked-api-not-found-yet",
+      "routes": []
+    },
+    {
+      "id": "staff-page",
+      "name": "Публичный каталог сотрудников",
+      "baseUrls": ["https://www.ssau.ru/staff"],
       "status": "page-checked-api-not-found-yet",
       "routes": []
     },
