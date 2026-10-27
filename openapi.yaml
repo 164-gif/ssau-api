@@ -17,15 +17,34 @@ paths:
       operationId: getRepositoryOaiPmhResponse
       summary: Request a read-only repository OAI-PMH operation
       description: >-
-        Identify, ListMetadataFormats and ListSets were verified. The OAI
-        ListIdentifiers, GetRecord and ListRecords operations are not yet tested.
+        Identify, ListMetadataFormats, ListSets, ListIdentifiers and GetRecord
+        were verified. ListRecords and resumption-token continuation are not tested.
       parameters:
         - name: verb
           in: query
           required: true
           schema:
             type: string
-            enum: [Identify, ListMetadataFormats, ListSets]
+            enum: [Identify, ListMetadataFormats, ListSets, ListIdentifiers, GetRecord]
+        - name: metadataPrefix
+          in: query
+          required: false
+          description: Required for ListIdentifiers and GetRecord.
+          schema:
+            type: string
+            example: oai_dc
+        - name: identifier
+          in: query
+          required: false
+          description: Required for GetRecord; use an identifier returned by this repository.
+          schema:
+            type: string
+        - name: resumptionToken
+          in: query
+          required: false
+          description: Continuation token; follow-up requests have not been tested.
+          schema:
+            type: string
       responses:
         "200":
           description: OAI-PMH XML response.

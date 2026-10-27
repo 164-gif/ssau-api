@@ -363,13 +363,16 @@
           "contentTypes": ["application/xml"],
           "authentication": "not-required-for-verified-public-requests",
           "parameters": [
-            {"name": "verb", "in": "query", "type": "string", "required": true, "enum": ["Identify", "ListMetadataFormats", "ListSets"]}
+            {"name": "verb", "in": "query", "type": "string", "required": true, "enum": ["Identify", "ListMetadataFormats", "ListSets", "ListIdentifiers", "GetRecord"]},
+            {"name": "metadataPrefix", "in": "query", "type": "string", "required": false, "notes": "Required for ListIdentifiers and GetRecord."},
+            {"name": "identifier", "in": "query", "type": "string", "required": false, "notes": "Required for GetRecord; use an identifier returned by this repository."},
+            {"name": "resumptionToken", "in": "query", "type": "string", "required": false, "notes": "Continuation token; it was not followed."}
           ],
-          "capabilities": ["identify-repository", "list-metadata-formats", "list-sets"],
-          "status": "three-read-only-verbs-verified",
+          "capabilities": ["identify-repository", "list-metadata-formats", "list-sets", "list-identifiers", "get-record"],
+          "status": "five-read-only-verbs-verified-listrecords-not-tested",
           "details": "docs/apis/repository-oai-pmh.md",
           "lastVerified": "2026-10-27",
-          "notes": "ListSets returned 100 set elements and no resumption token. ListIdentifiers, GetRecord and ListRecords were not requested."
+          "notes": "ListSets returned 100 set elements and no resumption token. ListIdentifiers returned 100 headers and a resumption token. GetRecord succeeded for one returned identifier; its metadata values were not retained. ListRecords and token continuation were not requested."
         }
       ],
       "observations": [
@@ -958,10 +961,10 @@
       "baseUrls": [
         "https://profkom.ssau.ru"
       ],
-      "status": "public-page-checked-api-not-confirmed",
+      "status": "robots-disallows-all; standard-api-candidates-404",
       "routes": [],
       "observations": [
-        "Joomla-подобная публичная страница просмотрена; отдельный API чтения не подтверждён."
+        "Страница использует Joomla; три стандартных API GET-кандидата (/api/index.php/v1, /content/articles, /content/categories) ответили 404. После этого обнаружен robots.txt с Disallow: /; дальнейшие запросы и обход остановлены."
       ]
     },
     {
