@@ -1,13 +1,12 @@
 openapi: 3.1.0
 info:
-  title: Samara University public news API
+  title: Selected Samara University public APIs
   version: "1.0.0"
   description: >-
-    OpenAPI description of currently verified public read-only data interfaces
-    on the Samara University website. The public news endpoint is documented at
-    https://ssau.ru/api_docs. The protected timetable proxy is listed separately
-    in the inventory because it was observed in a client but not live-verified.
-    Only a subset of parameter combinations has been verified independently.
+    OpenAPI description of selected verified public read-only interfaces across
+    Samara University sites. It is not the complete inventory; see
+    data/api-inventory.json and docs/coverage.md for coverage and unverified
+    candidates. The protected timetable and cabinet APIs are not callable here.
 servers:
   - url: https://ssau.ru
 paths:
@@ -59,6 +58,97 @@ paths:
                 type: array
                 items:
                   type: object
+  /wp-json/wp/v2/pages:
+    get:
+      servers:
+        - url: https://alumni.ssau.ru
+      operationId: listAlumniPublicPages
+      summary: List public alumni site pages
+      parameters:
+        - $ref: "#/components/parameters/WpPerPage"
+        - $ref: "#/components/parameters/WpFields"
+      responses:
+        "200":
+          description: Public pages.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/WordPressCollection"
+  /wp-json/wp/v2/mec-events:
+    get:
+      servers:
+        - url: https://alumni.ssau.ru
+      operationId: listAlumniPublicEventPosts
+      summary: List public event posts
+      parameters:
+        - $ref: "#/components/parameters/WpPerPage"
+        - $ref: "#/components/parameters/WpFields"
+      responses:
+        "200":
+          description: Public event posts.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/WordPressCollection"
+  /wp-json/wp/v2/categories:
+    get:
+      servers:
+        - url: https://alumni.ssau.ru
+      operationId: listAlumniCategories
+      summary: List public categories
+      parameters:
+        - $ref: "#/components/parameters/WpPerPage"
+        - $ref: "#/components/parameters/WpFields"
+      responses:
+        "200":
+          description: Public categories.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/WordPressCollection"
+  /wp-json/wp/v2/media:
+    get:
+      servers:
+        - url: https://alumni.ssau.ru
+      operationId: listAlumniMediaMetadata
+      summary: List public media metadata
+      description: Only limited metadata fields were requested during verification.
+      parameters:
+        - $ref: "#/components/parameters/WpPerPage"
+        - $ref: "#/components/parameters/WpFields"
+      responses:
+        "200":
+          description: Public media metadata.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/WordPressCollection"
+  /wp-json/wp/v2/types:
+    get:
+      servers:
+        - url: https://alumni.ssau.ru
+      operationId: listAlumniPostTypes
+      summary: List registered post types
+      responses:
+        "200":
+          description: Object mapping post type slugs to public metadata.
+          content:
+            application/json:
+              schema:
+                type: object
+  /wp-json/wp/v2/taxonomies:
+    get:
+      servers:
+        - url: https://alumni.ssau.ru
+      operationId: listAlumniTaxonomies
+      summary: List registered taxonomies
+      responses:
+        "200":
+          description: Object mapping taxonomy slugs to metadata.
+          content:
+            application/json:
+              schema:
+                type: object
   /index/ru/oai:
     get:
       servers:
@@ -446,7 +536,26 @@ paths:
         default:
           description: Error response; exact error schema is not documented.
 components:
+  parameters:
+    WpPerPage:
+      name: per_page
+      in: query
+      required: false
+      schema:
+        type: integer
+        minimum: 1
+    WpFields:
+      name: _fields
+      in: query
+      required: false
+      description: Comma-separated field allowlist.
+      schema:
+        type: string
   schemas:
+    WordPressCollection:
+      type: array
+      items:
+        type: object
     NewsItem:
       type: object
       description: Fields listed in official documentation; live field names can differ.

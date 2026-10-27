@@ -415,6 +415,337 @@
           "details": "docs/apis/alumni-wordpress.md",
           "lastVerified": "2026-10-27",
           "notes": "Verification used per_page=1 and a field allowlist; no post body was saved. The route index also advertises write methods, which were not invoked."
+        },
+        {
+          "id": "wordpress-public-pages",
+          "kind": "wordpress-rest-collection",
+          "method": "GET",
+          "path": "/wp-json/wp/v2/pages",
+          "contentTypes": [
+            "application/json"
+          ],
+          "authentication": "not-required-for-verified-public-request",
+          "parameters": [
+            {
+              "name": "per_page",
+              "in": "query",
+              "type": "integer",
+              "required": false,
+              "verifiedValue": 1
+            },
+            {
+              "name": "_fields",
+              "in": "query",
+              "type": "string",
+              "required": false,
+              "verifiedValue": "id,slug,date,link,title"
+            }
+          ],
+          "capabilities": [
+            "list-public-pages"
+          ],
+          "status": "verified-200-one-item",
+          "details": "docs/apis/alumni-wordpress.md#другие-проверенные-публичные-get-маршруты",
+          "lastVerified": "2026-10-27",
+          "notes": "A one-item GET with a field allowlist was used; response values were not stored."
+        },
+        {
+          "id": "wordpress-public-news-cpt",
+          "kind": "wordpress-rest-collection",
+          "method": "GET",
+          "path": "/wp-json/wp/v2/news",
+          "contentTypes": [
+            "application/json"
+          ],
+          "authentication": "not-required-for-verified-public-request",
+          "parameters": [
+            {
+              "name": "per_page",
+              "in": "query",
+              "type": "integer",
+              "required": false,
+              "verifiedValue": 1
+            },
+            {
+              "name": "_fields",
+              "in": "query",
+              "type": "string",
+              "required": false,
+              "verifiedValue": "id,slug,date,link,title"
+            }
+          ],
+          "capabilities": [
+            "list-public-news-custom-posts"
+          ],
+          "status": "verified-200-empty-array-on-check",
+          "details": "docs/apis/alumni-wordpress.md#другие-проверенные-публичные-get-маршруты",
+          "lastVerified": "2026-10-27",
+          "notes": "A one-item GET with a field allowlist was used; response values were not stored."
+        },
+        {
+          "id": "wordpress-public-faq-cpt",
+          "kind": "wordpress-rest-collection",
+          "method": "GET",
+          "path": "/wp-json/wp/v2/avada_faq",
+          "contentTypes": [
+            "application/json"
+          ],
+          "authentication": "not-required-for-verified-public-request",
+          "parameters": [
+            {
+              "name": "per_page",
+              "in": "query",
+              "type": "integer",
+              "required": false,
+              "verifiedValue": 1
+            },
+            {
+              "name": "_fields",
+              "in": "query",
+              "type": "string",
+              "required": false,
+              "verifiedValue": "id,slug,date,link,title"
+            }
+          ],
+          "capabilities": [
+            "list-public-faq-items"
+          ],
+          "status": "verified-200-empty-array-on-check",
+          "details": "docs/apis/alumni-wordpress.md#другие-проверенные-публичные-get-маршруты",
+          "lastVerified": "2026-10-27",
+          "notes": "A one-item GET with a field allowlist was used; response values were not stored."
+        },
+        {
+          "id": "wordpress-public-portfolio-cpt",
+          "kind": "wordpress-rest-collection",
+          "method": "GET",
+          "path": "/wp-json/wp/v2/avada_portfolio",
+          "contentTypes": [
+            "application/json"
+          ],
+          "authentication": "not-required-for-verified-public-request",
+          "parameters": [
+            {
+              "name": "per_page",
+              "in": "query",
+              "type": "integer",
+              "required": false,
+              "verifiedValue": 1
+            },
+            {
+              "name": "_fields",
+              "in": "query",
+              "type": "string",
+              "required": false,
+              "verifiedValue": "id,slug,date,link,title"
+            }
+          ],
+          "capabilities": [
+            "list-public-portfolio-items"
+          ],
+          "status": "verified-200-empty-array-on-check",
+          "details": "docs/apis/alumni-wordpress.md#другие-проверенные-публичные-get-маршруты",
+          "lastVerified": "2026-10-27",
+          "notes": "A one-item GET with a field allowlist was used; response values were not stored."
+        },
+        {
+          "id": "wordpress-public-mec-events",
+          "kind": "wordpress-rest-collection",
+          "method": "GET",
+          "path": "/wp-json/wp/v2/mec-events",
+          "contentTypes": [
+            "application/json"
+          ],
+          "authentication": "not-required-for-verified-public-request",
+          "parameters": [
+            {
+              "name": "per_page",
+              "in": "query",
+              "type": "integer",
+              "required": false,
+              "verifiedValue": 1
+            },
+            {
+              "name": "_fields",
+              "in": "query",
+              "type": "string",
+              "required": false,
+              "verifiedValue": "id,slug,date,link,title"
+            }
+          ],
+          "capabilities": [
+            "list-public-event-posts"
+          ],
+          "status": "verified-200-one-item",
+          "details": "docs/apis/alumni-wordpress.md#другие-проверенные-публичные-get-маршруты",
+          "lastVerified": "2026-10-27",
+          "notes": "A one-item GET with a field allowlist was used; response values were not stored."
+        },
+        {
+          "id": "wordpress-public-categories",
+          "kind": "wordpress-rest-collection",
+          "method": "GET",
+          "path": "/wp-json/wp/v2/categories",
+          "contentTypes": [
+            "application/json"
+          ],
+          "authentication": "not-required-for-verified-public-request",
+          "parameters": [
+            {
+              "name": "per_page",
+              "in": "query",
+              "type": "integer",
+              "required": false,
+              "verifiedValue": 1
+            },
+            {
+              "name": "_fields",
+              "in": "query",
+              "type": "string",
+              "required": false,
+              "verifiedValue": "id,link,name,slug"
+            }
+          ],
+          "capabilities": [
+            "list-public-categories"
+          ],
+          "status": "verified-200-one-item",
+          "details": "docs/apis/alumni-wordpress.md#другие-проверенные-публичные-get-маршруты",
+          "lastVerified": "2026-10-27",
+          "notes": "A one-item GET with a field allowlist was used; response values were not stored."
+        },
+        {
+          "id": "wordpress-public-tags",
+          "kind": "wordpress-rest-collection",
+          "method": "GET",
+          "path": "/wp-json/wp/v2/tags",
+          "contentTypes": [
+            "application/json"
+          ],
+          "authentication": "not-required-for-verified-public-request",
+          "parameters": [
+            {
+              "name": "per_page",
+              "in": "query",
+              "type": "integer",
+              "required": false,
+              "verifiedValue": 1
+            },
+            {
+              "name": "_fields",
+              "in": "query",
+              "type": "string",
+              "required": false,
+              "verifiedValue": "id,link,name,slug"
+            }
+          ],
+          "capabilities": [
+            "list-public-tags"
+          ],
+          "status": "verified-200-empty-array-on-check",
+          "details": "docs/apis/alumni-wordpress.md#другие-проверенные-публичные-get-маршруты",
+          "lastVerified": "2026-10-27",
+          "notes": "A one-item GET with a field allowlist was used; response values were not stored."
+        },
+        {
+          "id": "wordpress-public-media",
+          "kind": "wordpress-rest-collection",
+          "method": "GET",
+          "path": "/wp-json/wp/v2/media",
+          "contentTypes": [
+            "application/json"
+          ],
+          "authentication": "not-required-for-verified-public-request",
+          "parameters": [
+            {
+              "name": "per_page",
+              "in": "query",
+              "type": "integer",
+              "required": false,
+              "verifiedValue": 1
+            },
+            {
+              "name": "_fields",
+              "in": "query",
+              "type": "string",
+              "required": false,
+              "verifiedValue": "id,date,link,media_type,mime_type,slug,title"
+            }
+          ],
+          "capabilities": [
+            "list-public-media-metadata"
+          ],
+          "status": "verified-200-one-item",
+          "details": "docs/apis/alumni-wordpress.md#другие-проверенные-публичные-get-маршруты",
+          "lastVerified": "2026-10-27",
+          "notes": "One media item was returned; only metadata fields were requested and no values were stored."
+        },
+        {
+          "id": "wordpress-mec-events-api",
+          "kind": "wordpress-rest-collection",
+          "method": "GET",
+          "path": "/wp-json/mec/v1/events",
+          "contentTypes": [
+            "application/json"
+          ],
+          "authentication": "not-required-for-verified-public-request",
+          "parameters": [
+            {
+              "name": "per_page",
+              "in": "query",
+              "type": "integer",
+              "required": false,
+              "verifiedValue": 1
+            },
+            {
+              "name": "_fields",
+              "in": "query",
+              "type": "string",
+              "required": false,
+              "verifiedValue": "id,title,start,end"
+            }
+          ],
+          "capabilities": [
+            "list-public-events"
+          ],
+          "status": "verified-200-empty-array-on-check",
+          "details": "docs/apis/alumni-wordpress.md#другие-проверенные-публичные-get-маршруты",
+          "lastVerified": "2026-10-27",
+          "notes": "Plugin endpoint returned an empty array for the checked request; fields and parameters need further validation."
+        },
+        {
+          "id": "wordpress-public-types",
+          "kind": "wordpress-rest-discovery-endpoint",
+          "method": "GET",
+          "path": "/wp-json/wp/v2/types",
+          "contentTypes": [
+            "application/json"
+          ],
+          "authentication": "not-required-for-verified-public-request",
+          "capabilities": [
+            "list-registered-post-type-metadata"
+          ],
+          "status": "verified-200-15-object-keys",
+          "details": "docs/apis/alumni-wordpress.md#другие-проверенные-публичные-get-маршруты",
+          "lastVerified": "2026-10-27",
+          "notes": "Only the 15 registered type slugs were recorded; field values were not saved."
+        },
+        {
+          "id": "wordpress-public-taxonomies",
+          "kind": "wordpress-rest-discovery-endpoint",
+          "method": "GET",
+          "path": "/wp-json/wp/v2/taxonomies",
+          "contentTypes": [
+            "application/json"
+          ],
+          "authentication": "not-required-for-verified-public-request",
+          "capabilities": [
+            "list-registered-taxonomies"
+          ],
+          "status": "verified-200-10-object-keys",
+          "details": "docs/apis/alumni-wordpress.md#другие-проверенные-публичные-get-маршруты",
+          "lastVerified": "2026-10-27",
+          "notes": "Only the 10 taxonomy slugs were recorded; field values were not saved."
         }
       ],
       "observations": [
