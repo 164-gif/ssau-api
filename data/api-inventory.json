@@ -350,13 +350,31 @@
       "id": "repository",
       "name": "Репозиторий университета",
       "baseUrls": [
+        "https://repo.ssau.ru",
         "https://repo.ssau.ru/jspui/"
       ],
-      "status": "legacy-dspace-jspui-checked-rest-api-not-confirmed",
-      "routes": [],
+      "status": "oai-pmh-verified; rest-api-not-confirmed",
+      "routes": [
+        {
+          "id": "repository-oai-pmh",
+          "kind": "oai-pmh-metadata-api",
+          "method": "GET",
+          "path": "/oai/request?verb={verb}",
+          "contentTypes": ["application/xml"],
+          "authentication": "not-required-for-verified-public-requests",
+          "parameters": [
+            {"name": "verb", "in": "query", "type": "string", "required": true, "enum": ["Identify", "ListMetadataFormats", "ListSets"]}
+          ],
+          "capabilities": ["identify-repository", "list-metadata-formats", "list-sets"],
+          "status": "three-read-only-verbs-verified",
+          "details": "docs/apis/repository-oai-pmh.md",
+          "lastVerified": "2026-10-27",
+          "notes": "ListSets returned 100 set elements and no resumption token. ListIdentifiers, GetRecord and ListRecords were not requested."
+        }
+      ],
       "observations": [
         "Landing page capture returned HTML; no first-party data API appeared among candidates.",
-        "GET /server/api, /server/api/core/communities, /rest, and /rest/communities returned 404.",
+        "GET /server/api, /server/api/core/communities, /rest, /rest/communities, /server/oai/request, /jspui/oai/request, and /jspui/dspace-oai/request returned 404.",
         "The repository robots.txt disallows /discover and /simple-search; these paths were not crawled."
       ]
     },

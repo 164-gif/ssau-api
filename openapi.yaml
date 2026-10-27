@@ -10,6 +10,29 @@ info:
 servers:
   - url: https://ssau.ru
 paths:
+  /oai/request:
+    get:
+      servers:
+        - url: https://repo.ssau.ru
+      operationId: getRepositoryOaiPmhResponse
+      summary: Request a read-only repository OAI-PMH operation
+      description: >-
+        Identify, ListMetadataFormats and ListSets were verified. The OAI
+        ListIdentifiers, GetRecord and ListRecords operations are not yet tested.
+      parameters:
+        - name: verb
+          in: query
+          required: true
+          schema:
+            type: string
+            enum: [Identify, ListMetadataFormats, ListSets]
+      responses:
+        "200":
+          description: OAI-PMH XML response.
+          content:
+            application/xml:
+              schema:
+                type: string
   /wp-json/:
     get:
       servers:
