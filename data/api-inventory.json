@@ -201,7 +201,7 @@
         "https://priem.ssau.ru",
         "https://priemsamara.ru"
       ],
-      "status": "two-public-ajax-html-routes-verified",
+      "status": "six-public-get-route-templates-verified",
       "routes": [
         {
           "id": "get-program-fragment",
@@ -252,6 +252,72 @@
           "status": "browser-interaction-observed-and-verified",
           "details": "docs/apis/admissions-fragments.md",
           "lastVerified": "2026-10-27"
+        },
+        {
+          "id": "get-faculty-master-fragment",
+          "kind": "ajax-html-fragment",
+          "method": "GET",
+          "path": "/get_fac/{facultyId}/mag",
+          "contentTypes": ["text/html"],
+          "authentication": "not-required-for-verified-public-request",
+          "parameters": [
+            {"name": "facultyId", "in": "path", "type": "integer", "required": true}
+          ],
+          "capabilities": ["get-faculty-master-programs"],
+          "status": "found-on-public-page-and-verified",
+          "details": "docs/apis/admissions-fragments.md",
+          "lastVerified": "2026-10-27"
+        },
+        {
+          "id": "get-faculty-postgraduate-fragment",
+          "kind": "ajax-html-fragment",
+          "method": "GET",
+          "path": "/get_asp_fac/{facultyId}",
+          "contentTypes": ["text/html"],
+          "authentication": "not-required-for-verified-public-request",
+          "parameters": [
+            {"name": "facultyId", "in": "path", "type": "integer", "required": true}
+          ],
+          "capabilities": ["get-faculty-postgraduate-programs"],
+          "status": "found-on-public-page-and-verified",
+          "details": "docs/apis/admissions-fragments.md",
+          "lastVerified": "2026-10-27"
+        },
+        {
+          "id": "admission-ratings",
+          "kind": "html-data-table",
+          "method": "GET",
+          "path": "/ratings/",
+          "contentTypes": ["text/html"],
+          "authentication": "not-required-for-verified-public-request",
+          "parameters": [
+            {"name": "pk", "in": "query", "type": "integer", "required": true, "description": "Program identifier"},
+            {"name": "filter", "in": "query", "type": "string", "required": true, "observedValues": ["enrolled"]},
+            {"name": "pay", "in": "query", "type": "string", "required": false, "observedValues": ["budget"]}
+          ],
+          "capabilities": ["read-admission-rating-table"],
+          "status": "found-in-public-page-and-verified",
+          "details": "docs/apis/admissions-fragments.md#рейтинги-зачисления",
+          "lastVerified": "2026-10-27",
+          "notes": "Response contains applicant ranking data. Only table headers were inspected; row values were not retained."
+        },
+        {
+          "id": "spo-admission-ratings",
+          "kind": "html-data-table",
+          "method": "GET",
+          "path": "/ratings_spo/",
+          "contentTypes": ["text/html"],
+          "authentication": "not-required-for-verified-public-request",
+          "parameters": [
+            {"name": "pk", "in": "query", "type": "integer", "required": true, "description": "Program identifier"},
+            {"name": "filter", "in": "query", "type": "string", "required": true, "observedValues": ["all"]},
+            {"name": "pay", "in": "query", "type": "string", "required": false, "observedValues": ["budget"]}
+          ],
+          "capabilities": ["read-spo-admission-rating-table"],
+          "status": "found-in-public-page-and-verified",
+          "details": "docs/apis/admissions-fragments.md#рейтинги-зачисления",
+          "lastVerified": "2026-10-27",
+          "notes": "Table headings include a SNILS column. Only headings were inspected; applicant rows were not retained."
         }
       ]
     },

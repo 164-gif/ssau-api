@@ -180,6 +180,115 @@ paths:
             text/html:
               schema:
                 type: string
+  /get_fac/{facultyId}/mag:
+    get:
+      servers:
+        - url: https://priemsamara.ru
+      operationId: getFacultyMasterProgramsFragment
+      summary: Get an admissions faculty master's programs fragment
+      parameters:
+        - name: facultyId
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        "200":
+          description: HTML fragment with faculty master's programs.
+          content:
+            text/html:
+              schema:
+                type: string
+  /get_asp_fac/{facultyId}:
+    get:
+      servers:
+        - url: https://priemsamara.ru
+      operationId: getFacultyPostgraduateProgramsFragment
+      summary: Get an admissions faculty postgraduate programs fragment
+      parameters:
+        - name: facultyId
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        "200":
+          description: HTML fragment with postgraduate programs.
+          content:
+            text/html:
+              schema:
+                type: string
+  /ratings/:
+    get:
+      servers:
+        - url: https://priemsamara.ru
+      operationId: getAdmissionRatingTable
+      summary: Get an admission rating table
+      description: >-
+        Public HTML table linked from the programs page. The response contains
+        applicant data; this catalog records the route and parameters only and
+        does not store response rows.
+      parameters:
+        - name: pk
+          in: query
+          required: true
+          description: Program identifier.
+          schema:
+            type: integer
+        - name: filter
+          in: query
+          required: true
+          schema:
+            type: string
+            example: enrolled
+        - name: pay
+          in: query
+          required: false
+          schema:
+            type: string
+            example: budget
+      responses:
+        "200":
+          description: HTML rating table.
+          content:
+            text/html:
+              schema:
+                type: string
+  /ratings_spo/:
+    get:
+      servers:
+        - url: https://priemsamara.ru
+      operationId: getSpoAdmissionRatingTable
+      summary: Get a vocational education admission rating table
+      description: >-
+        Public HTML table; verified headers include a SNILS column. Applicant
+        rows are intentionally not included in this specification.
+      parameters:
+        - name: pk
+          in: query
+          required: true
+          description: Program identifier.
+          schema:
+            type: integer
+        - name: filter
+          in: query
+          required: true
+          schema:
+            type: string
+            example: all
+        - name: pay
+          in: query
+          required: false
+          schema:
+            type: string
+            example: budget
+      responses:
+        "200":
+          description: HTML rating table.
+          content:
+            text/html:
+              schema:
+                type: string
   /rasp/search:
     post:
       operationId: searchScheduleGroups
