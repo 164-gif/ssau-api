@@ -1,0 +1,4 @@
+.api-anything-local/
+.api-anything/
+*.har
+*.cookies.json

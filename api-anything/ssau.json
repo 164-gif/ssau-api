@@ -1,0 +1,107 @@
+{
+  "name": "ssau",
+  "baseUrl": "https://ssau.ru",
+  "operations": [
+    {
+      "name": "getNewsById",
+      "description": "Get one public university news item by ID",
+      "request": {
+        "method": "GET",
+        "url": "https://ssau.ru/api/news?id=%7Bid%7D",
+        "headers": { "accept": "application/json" }
+      },
+      "slots": [
+        {
+          "param": "id",
+          "at": [
+            "query:id"
+          ]
+        }
+      ],
+      "volatile": [],
+      "trigger": {
+        "url": "https://ssau.ru/api/news/?id={id}"
+      },
+      "match": {
+        "method": "GET",
+        "host": "ssau.ru",
+        "path": "/api/news"
+      },
+      "response": {
+        "format": "json",
+        "contentType": "application/json",
+        "extract": "[0]"
+      },
+      "params": [
+        {
+          "name": "id",
+          "type": "string",
+          "required": true,
+          "example": "26230"
+        }
+      ],
+      "readOnly": true,
+      "minTier": 1,
+      "learnedLoggedIn": false,
+      "checks": [
+        {
+          "args": {
+            "id": "26229"
+          },
+          "expect": "result",
+          "purpose": "learn_site holdout"
+        }
+      ]
+    },
+    {
+      "name": "searchNews",
+      "description": "Search public university news by title text",
+      "request": {
+        "method": "GET",
+        "url": "https://ssau.ru/api/news?q=%7Bq%7D&limit=10&index=0&lang=ru",
+        "headers": { "accept": "application/json" }
+      },
+      "slots": [
+        {
+          "param": "q",
+          "at": [
+            "query:q"
+          ]
+        }
+      ],
+      "volatile": [],
+      "trigger": {
+        "url": "https://ssau.ru/api/news/?q={q}&limit=10&index=0&lang=ru"
+      },
+      "match": {
+        "method": "GET",
+        "host": "ssau.ru",
+        "path": "/api/news"
+      },
+      "response": {
+        "format": "json",
+        "contentType": "application/json"
+      },
+      "params": [
+        {
+          "name": "q",
+          "type": "string",
+          "required": true,
+          "example": "космос"
+        }
+      ],
+      "readOnly": true,
+      "minTier": 1,
+      "learnedLoggedIn": false,
+      "checks": [
+        {
+          "args": {
+            "q": "астрономия"
+          },
+          "expect": "result",
+          "purpose": "learn_site holdout"
+        }
+      ]
+    }
+  ]
+}

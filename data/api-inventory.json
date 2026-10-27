@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-10-27",
+  "scope": "Официальные публичные сайты и связанные цифровые системы Самарского университета; покрытие неполное",
+  "systems": [
+    {
+      "id": "main-portal",
+      "name": "Основной сайт Самарского университета",
+      "baseUrls": ["https://ssau.ru"],
+      "status": "partially-investigated",
+      "routes": [
+        {
+          "id": "public-news",
+          "method": "GET",
+          "path": "/api/news/",
+          "contentTypes": ["application/json", "application/xml"],
+          "authentication": "not-required-for-verified-public-requests",
+          "capabilities": [
+            "list-news",
+            "get-by-id",
+            "search-title",
+            "filter-date-range",
+            "filter-type",
+            "filter-tags",
+            "filter-language",
+            "filter-slideshow",
+            "xml-output"
+          ],
+          "status": "documented-and-partially-verified",
+          "documentation": "https://ssau.ru/api_docs",
+          "details": "docs/apis/public-news.md",
+          "lastVerified": "2026-10-27"
+        }
+      ]
+    },
+    {
+      "id": "schedule-page",
+      "name": "Публичная страница расписания",
+      "baseUrls": ["https://ssau.ru/rasp"],
+      "status": "page-checked-api-not-found-yet",
+      "routes": []
+    },
+    {
+      "id": "student-cabinet",
+      "name": "Личный кабинет",
+      "baseUrls": ["https://lk.ssau.ru"],
+      "status": "not-investigated",
+      "routes": []
+    },
+    {
+      "id": "admissions",
+      "name": "Сайт приёмной кампании",
+      "baseUrls": ["https://priem.ssau.ru"],
+      "status": "not-investigated",
+      "routes": []
+    },
+    {
+      "id": "repository",
+      "name": "Репозиторий университета",
+      "baseUrls": ["https://repo.ssau.ru"],
+      "status": "not-investigated",
+      "routes": []
+    }
+  ]
+}
