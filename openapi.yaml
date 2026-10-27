@@ -66,18 +66,74 @@ paths:
       operationId: getJournalOaiPmhResponse
       summary: Request a read-only OAI-PMH operation
       description: >-
-        Identify, ListMetadataFormats and ListSets were verified on the root
-        journal portal. Other protocol verbs are not yet tested.
+        Identify, ListMetadataFormats, ListSets, ListIdentifiers and GetRecord
+        were verified. GetRecord works on the computeroptics journal endpoint;
+        the root endpoint returns badArgument for an identifier it emitted.
       parameters:
         - name: verb
           in: query
           required: true
           schema:
             type: string
-            enum: [Identify, ListMetadataFormats, ListSets]
+            enum: [Identify, ListMetadataFormats, ListSets, ListIdentifiers, GetRecord]
+        - name: metadataPrefix
+          in: query
+          required: false
+          description: Required by ListIdentifiers and GetRecord.
+          schema:
+            type: string
+            example: oai_dc
+        - name: identifier
+          in: query
+          required: false
+          description: Required by GetRecord; use an identifier from the same journal base URL.
+          schema:
+            type: string
       responses:
         "200":
           description: OAI-PMH XML response.
+          content:
+            text/xml:
+              schema:
+                type: string
+  /computeroptics/ru/oai:
+    get:
+      servers:
+        - url: https://journals.ssau.ru
+      operationId: getComputerOpticsOaiPmhResponse
+      summary: Read OAI-PMH metadata for Computer Optics
+      description: >-
+        The five documented read-only verbs were checked for this journal.
+        GetRecord succeeds when identifier is copied from this endpoint's
+        ListIdentifiers response.
+      parameters:
+        - name: verb
+          in: query
+          required: true
+          schema:
+            type: string
+            enum: [Identify, ListMetadataFormats, ListSets, ListIdentifiers, GetRecord]
+        - name: metadataPrefix
+          in: query
+          required: false
+          schema:
+            type: string
+            example: oai_dc
+        - name: identifier
+          in: query
+          required: false
+          description: Identifier returned by this journal endpoint; required for GetRecord.
+          schema:
+            type: string
+        - name: resumptionToken
+          in: query
+          required: false
+          description: OAI-PMH continuation token; pagination has not been followed.
+          schema:
+            type: string
+      responses:
+        "200":
+          description: OAI-PMH XML response, possibly containing a protocol error element.
           content:
             text/xml:
               schema:

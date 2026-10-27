@@ -356,19 +356,74 @@
               "enum": [
                 "Identify",
                 "ListMetadataFormats",
-                "ListSets"
+                "ListSets",
+                "ListIdentifiers",
+                "GetRecord"
               ]
+            },
+            {
+              "name": "metadataPrefix",
+              "in": "query",
+              "type": "string",
+              "required": false,
+              "notes": "Required for ListIdentifiers and GetRecord."
+            },
+            {
+              "name": "identifier",
+              "in": "query",
+              "type": "string",
+              "required": false,
+              "notes": "Required for GetRecord; use an identifier returned by the same journal endpoint."
+            },
+            {
+              "name": "resumptionToken",
+              "in": "query",
+              "type": "string",
+              "required": false,
+              "notes": "OAI-PMH continuation token; paging was not followed."
             }
           ],
           "capabilities": [
             "identify-repository",
             "list-metadata-formats",
-            "list-sets"
+            "list-sets",
+            "list-identifiers",
+            "get-record-from-journal-endpoint"
           ],
           "status": "verified",
           "details": "docs/apis/journals-oai-pmh.md",
           "lastVerified": "2026-10-27",
-          "notes": "The same OAI-PMH verbs were verified at /computeroptics/ru/oai. Additional OAI-PMH verbs and journals remain to be checked."
+          "notes": "Root ListIdentifiers returned 500 headers plus a resumption token. Root GetRecord failed with badArgument for its own returned identifier; GetRecord succeeded at the computeroptics endpoint."
+        },
+        {
+          "id": "ojs-protected-rest",
+          "kind": "protected-json-api",
+          "method": "GET",
+          "path": "/{journal}/api/v1/{resource}",
+          "contentTypes": [
+            "application/json"
+          ],
+          "authentication": "required; mechanism-not-verified",
+          "parameters": [
+            {
+              "name": "resource",
+              "in": "path",
+              "type": "string",
+              "required": true,
+              "examples": [
+                "contexts",
+                "contexts/{id}",
+                "submissions"
+              ]
+            }
+          ],
+          "capabilities": [
+            "OJS REST API; authenticated access not tested"
+          ],
+          "status": "route-families-observed-unauthenticated-401",
+          "details": "docs/apis/journals-ojs-rest.md",
+          "lastVerified": "2026-10-27",
+          "notes": "GET /index/api/v1/contexts, /index/api/v1/contexts/1, /index/api/v1/submissions, /computeroptics/api/v1/contexts, and /computeroptics/api/v1/submissions returned 401 JSON without credentials."
         }
       ]
     },
