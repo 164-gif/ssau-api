@@ -11,6 +11,7 @@
       "routes": [
         {
           "id": "public-news",
+          "kind": "rest-api",
           "method": "GET",
           "path": "/api/news/",
           "contentTypes": ["application/json", "text/xml"],
@@ -30,6 +31,35 @@
           "documentation": "https://ssau.ru/api_docs",
           "details": "docs/apis/public-news.md",
           "lastVerified": "2026-10-27"
+        },
+        {
+          "id": "public-news-rss",
+          "kind": "rss-feed",
+          "method": "GET",
+          "path": "/rss/",
+          "contentTypes": ["text/xml"],
+          "authentication": "not-required-for-verified-public-request",
+          "capabilities": ["read-recent-news"],
+          "status": "linked-from-portal-and-verified",
+          "documentation": "https://ssau.ru/",
+          "details": "docs/apis/public-news.md#rss-feed",
+          "lastVerified": "2026-10-27"
+        },
+        {
+          "id": "schedule-group-search",
+          "kind": "json-search-endpoint",
+          "method": "POST",
+          "path": "/rasp/search",
+          "contentTypes": ["application/json"],
+          "requestContentType": "application/x-www-form-urlencoded",
+          "authentication": "public-session-and-csrf-token-required; no login required in verified request",
+          "parameters": [
+            {"name": "text", "in": "form", "type": "string", "required": true}
+          ],
+          "capabilities": ["search-schedule-groups"],
+          "status": "found-in-schedule-client-and-verified",
+          "details": "docs/apis/schedule-search.md",
+          "lastVerified": "2026-10-27"
         }
       ]
     },
@@ -37,36 +67,115 @@
       "id": "schedule-page",
       "name": "Публичная страница расписания",
       "baseUrls": ["https://ssau.ru/rasp"],
-      "status": "page-checked-api-not-found-yet",
+      "status": "pages-and-faculty-filter-checked-data-api-not-found-in-capture",
       "routes": []
     },
     {
       "id": "staff-page",
       "name": "Публичный каталог сотрудников",
       "baseUrls": ["https://www.ssau.ru/staff"],
-      "status": "page-checked-api-not-found-yet",
+      "status": "page-and-filter-click-checked-data-api-not-found-in-capture",
       "routes": []
     },
     {
       "id": "student-cabinet",
       "name": "Личный кабинет",
       "baseUrls": ["https://lk.ssau.ru"],
-      "status": "not-investigated",
-      "routes": []
+      "status": "login-page-checked-no-authenticated-operations-captured",
+      "routes": [
+        {
+          "id": "account-login",
+          "kind": "authentication-flow",
+          "method": "POST",
+          "path": "/account/login",
+          "contentTypes": ["multipart/form-data"],
+          "authentication": "creates-session-after-valid-credentials",
+          "parameters": [
+            {"name": "login", "in": "form", "type": "string", "required": true},
+            {"name": "password", "in": "form", "type": "string", "required": true},
+            {"name": "dynamic-hidden-fields", "in": "form", "type": "object", "required": false}
+          ],
+          "capabilities": ["create-authenticated-session"],
+          "status": "observed-in-existing-client-not-live-verified",
+          "details": "docs/apis/student-timetable-proxy.md#login-flow",
+          "lastVerified": null
+        },
+        {
+          "id": "authenticated-timetable",
+          "kind": "protected-json-api",
+          "method": "GET",
+          "path": "/api/proxy/timetable/get-timetable",
+          "contentTypes": ["application/json"],
+          "authentication": "authenticated-student-session-required",
+          "parameters": [
+            {"name": "yearId", "in": "query", "type": "integer", "required": true},
+            {"name": "week", "in": "query", "type": "integer", "required": true},
+            {"name": "userType", "in": "query", "type": "string", "required": true, "example": "student"},
+            {"name": "groupId", "in": "query", "type": "string", "required": true}
+          ],
+          "capabilities": ["get-authenticated-timetable"],
+          "status": "observed-in-existing-client-not-live-verified",
+          "details": "docs/apis/student-timetable-proxy.md",
+          "lastVerified": null
+        }
+      ],
+      "observations": [
+        "Root redirects to /account/login?returnUrl=%252F.",
+        "Unauthenticated page load issued Next.js RSC navigation requests with the _rsc query parameter.",
+        "Login POST and protected timetable GET are observed in the existing client; no credentials or authenticated request were used in this review."
+      ]
     },
     {
       "id": "admissions",
       "name": "Сайт приёмной кампании",
-      "baseUrls": ["https://priem.ssau.ru"],
-      "status": "not-investigated",
-      "routes": []
+      "baseUrls": ["https://priem.ssau.ru", "https://priemsamara.ru"],
+      "status": "two-public-ajax-html-routes-verified",
+      "routes": [
+        {
+          "id": "get-program-fragment",
+          "kind": "ajax-html-fragment",
+          "method": "GET",
+          "path": "/get_program/{id}",
+          "contentTypes": ["text/html"],
+          "authentication": "not-required-for-verified-public-requests",
+          "parameters": [
+            {"name": "id", "in": "path", "type": "integer", "required": true}
+          ],
+          "capabilities": ["get-admission-program-details"],
+          "status": "browser-interaction-observed-and-verified",
+          "apiAnythingOperation": "priem-samara.getProgramTitle",
+          "details": "docs/apis/admissions-fragments.md",
+          "lastVerified": "2026-10-27",
+          "notes": "HTML fragment can include public contact details; raw responses are not stored."
+        },
+        {
+          "id": "get-faculty-bachelor-fragment",
+          "kind": "ajax-html-fragment",
+          "method": "GET",
+          "path": "/get_fac/{facultyId}/bac",
+          "contentTypes": ["text/html"],
+          "authentication": "not-required-for-verified-public-requests",
+          "parameters": [
+            {"name": "facultyId", "in": "path", "type": "integer", "required": true}
+          ],
+          "capabilities": ["get-faculty-bachelor-programs"],
+          "status": "browser-interaction-observed-and-verified",
+          "details": "docs/apis/admissions-fragments.md",
+          "lastVerified": "2026-10-27"
+        }
+      ]
     },
     {
       "id": "repository",
       "name": "Репозиторий университета",
-      "baseUrls": ["https://repo.ssau.ru"],
-      "status": "not-investigated",
-      "routes": []
+      "baseUrls": ["https://repo.ssau.ru/jspui/"],
+      "status": "legacy-dspace-jspui-checked-rest-api-not-confirmed",
+      "routes": [],
+      "observations": [
+        "Landing page capture returned HTML; no first-party data API appeared among candidates.",
+        "GET /server/api, /server/api/core/communities, /rest, and /rest/communities returned 404.",
+        "The repository robots.txt disallows /discover and /simple-search; these paths were not crawled."
+      ]
     }
   ]
 }

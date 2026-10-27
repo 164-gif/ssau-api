@@ -3,13 +3,114 @@ info:
   title: Samara University public news API
   version: "1.0.0"
   description: >-
-    OpenAPI description of the publicly documented read-only news endpoint on
-    the Samara University website. The university documents this endpoint at
-    https://ssau.ru/api_docs. Only a subset of parameter combinations has been
-    verified independently.
+    OpenAPI description of currently verified public read-only data interfaces
+    on the Samara University website. The public news endpoint is documented at
+    https://ssau.ru/api_docs. The protected timetable proxy is listed separately
+    in the inventory because it was observed in a client but not live-verified.
+    Only a subset of parameter combinations has been verified independently.
 servers:
   - url: https://ssau.ru
 paths:
+  /get_program/{id}:
+    get:
+      servers:
+        - url: https://priemsamara.ru
+      operationId: getAdmissionProgramFragment
+      summary: Get an admission program HTML fragment
+      description: >-
+        Public AJAX fragment loaded by the admissions site when a program is
+        selected. The fragment can contain contact details; raw examples are
+        not included in this repository.
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        "200":
+          description: HTML fragment for a program card.
+          content:
+            text/html:
+              schema:
+                type: string
+  /get_fac/{facultyId}/bac:
+    get:
+      servers:
+        - url: https://priemsamara.ru
+      operationId: getFacultyBachelorProgramsFragment
+      summary: Get an admissions faculty bachelor programs fragment
+      parameters:
+        - name: facultyId
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        "200":
+          description: HTML fragment with faculty bachelor programs.
+          content:
+            text/html:
+              schema:
+                type: string
+  /rasp/search:
+    post:
+      operationId: searchScheduleGroups
+      summary: Search public schedule groups
+      description: >-
+        Read-only search implemented as POST. First load /rasp, retain its
+        session cookie, and send its csrf-token meta value in X-CSRF-TOKEN.
+      parameters:
+        - name: X-CSRF-TOKEN
+          in: header
+          required: true
+          description: Token copied from the public /rasp page.
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/x-www-form-urlencoded:
+            schema:
+              type: object
+              required: [text]
+              properties:
+                text:
+                  type: string
+                  description: Group name or other text to search.
+      responses:
+        "200":
+          description: Matching schedule groups.
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    id:
+                      type: integer
+                    url:
+                      type: string
+                    text:
+                      type: string
+        default:
+          description: Error response; exact error schema is not documented.
+  /rss/:
+    get:
+      operationId: getNewsRssFeed
+      summary: Get the public news RSS feed
+      description: >-
+        This is an RSS 2.0 feed linked from the portal footer. It is a feed
+        interface, not a documented REST operation; no query parameters are
+        documented.
+      responses:
+        "200":
+          description: RSS 2.0 document.
+          content:
+            text/xml:
+              schema:
+                type: string
   /api/news/:
     get:
       operationId: listNews

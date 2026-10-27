@@ -1,8 +1,8 @@
 # API Anything operations
 
-This directory contains the checked API Anything specification for the public news API. The `getNewsById` and `searchNews` operations were learned using three public values, passed a holdout call, and were independently called without cookies on 2026-10-27.
+This directory contains checked API Anything specifications for public interfaces. On `ssau.ru`, `getNewsById` and `searchNews` were learned using public values, passed a holdout call, and were independently called without cookies. On `priemsamara.ru`, `getProgramTitle` was learned with an HTML extraction recipe that keeps only the program title, then called with a holdout ID. Checks ran on 2026-10-27.
 
-The learner labeled these public requests as logged-in. Direct requests to the same routes succeeded without cookies, so `learnedLoggedIn` is set to `false` in the checked-in spec. This is recorded here to make the manual correction explicit.
+The learner labeled the public `ssau.ru` requests as logged-in. Direct requests to the same routes succeeded without cookies, so `learnedLoggedIn` is set to `false` in the checked-in spec. This is recorded here to make the manual correction explicit.
 
 To explore locally without sharing captures or publishing learned operations:
 
@@ -16,3 +16,5 @@ npx -y github:goodnight000/api-anything learn \
 ```
 
 Keep `.api-anything-local` out of version control: captures can contain cookies. Export only reviewed public operations into this directory. Do not run `publish` for this project unless publication to the shared API Anything catalog is explicitly intended.
+
+`priem-samara.json` extracts only the program title from the HTML fragment. The unfiltered response can contain contact information; do not export a raw HTML response.

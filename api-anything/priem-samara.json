@@ -1,0 +1,52 @@
+{
+  "name": "priem-samara",
+  "baseUrl": "https://priemsamara.ru",
+  "operations": [
+    {
+      "name": "getProgramTitle",
+      "description": "Get the title of a public admissions program",
+      "request": {
+        "method": "GET",
+        "url": "https://priemsamara.ru/get_program/%7Bid%7D",
+        "headers": { "accept": "text/html" }
+      },
+      "slots": [
+        {
+          "param": "id",
+          "at": [
+            "path:1"
+          ]
+        }
+      ],
+      "volatile": [],
+      "trigger": {
+        "url": "https://priemsamara.ru/get_program/{id}"
+      },
+      "match": {
+        "method": "GET",
+        "path": "/get_program/*"
+      },
+      "response": {
+        "format": "html",
+        "contentType": "text/html; charset=utf-8",
+        "html": {
+          "items": "div.title-program",
+          "fields": {
+            "title": "h3"
+          }
+        }
+      },
+      "params": [
+        {
+          "name": "id",
+          "type": "string",
+          "required": true,
+          "example": "2"
+        }
+      ],
+      "readOnly": true,
+      "minTier": 1,
+      "learnedLoggedIn": false
+    }
+  ]
+}
