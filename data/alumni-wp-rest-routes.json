@@ -1,0 +1,5344 @@
+{
+  "source": "https://alumni.ssau.ru/wp-json/",
+  "retrievedAt": "2026-10-27",
+  "routeCount": 185,
+  "note": "Sanitized route index: route templates, HTTP methods, argument names and required argument names only. Does not establish that every route is publicly callable.",
+  "routes": [
+    {
+      "path": "/",
+      "namespace": "",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "context"
+          ],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/batch/v1",
+      "namespace": "",
+      "endpoints": [
+        {
+          "methods": [
+            "POST"
+          ],
+          "argumentNames": [
+            "requests",
+            "validation"
+          ],
+          "requiredArguments": [
+            "requests"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/contact-form-7/v1",
+      "namespace": "contact-form-7/v1",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "context",
+            "namespace"
+          ],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/contact-form-7/v1/contact-forms",
+      "namespace": "contact-form-7/v1",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [],
+          "requiredArguments": []
+        },
+        {
+          "methods": [
+            "POST"
+          ],
+          "argumentNames": [],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/contact-form-7/v1/contact-forms/(?P<id>\\d+)",
+      "namespace": "contact-form-7/v1",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [],
+          "requiredArguments": []
+        },
+        {
+          "methods": [
+            "PATCH",
+            "POST",
+            "PUT"
+          ],
+          "argumentNames": [],
+          "requiredArguments": []
+        },
+        {
+          "methods": [
+            "DELETE"
+          ],
+          "argumentNames": [],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/contact-form-7/v1/contact-forms/(?P<id>\\d+)/feedback",
+      "namespace": "contact-form-7/v1",
+      "endpoints": [
+        {
+          "methods": [
+            "POST"
+          ],
+          "argumentNames": [],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/contact-form-7/v1/contact-forms/(?P<id>\\d+)/refill",
+      "namespace": "contact-form-7/v1",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/mc4wp/v1",
+      "namespace": "mc4wp/v1",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "context",
+            "namespace"
+          ],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/mc4wp/v1/form",
+      "namespace": "mc4wp/v1",
+      "endpoints": [
+        {
+          "methods": [
+            "POST"
+          ],
+          "argumentNames": [],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/mec/v1",
+      "namespace": "mec/v1",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "context",
+            "namespace"
+          ],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/mec/v1/events",
+      "namespace": "mec/v1",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/oembed/1.0",
+      "namespace": "oembed/1.0",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "context",
+            "namespace"
+          ],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/oembed/1.0/embed",
+      "namespace": "oembed/1.0",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "format",
+            "maxwidth",
+            "url"
+          ],
+          "requiredArguments": [
+            "url"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/oembed/1.0/proxy",
+      "namespace": "oembed/1.0",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "discover",
+            "format",
+            "maxheight",
+            "maxwidth",
+            "url"
+          ],
+          "requiredArguments": [
+            "url"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/wp-block-editor/v1",
+      "namespace": "wp-block-editor/v1",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "context",
+            "namespace"
+          ],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/wp-block-editor/v1/export",
+      "namespace": "wp-block-editor/v1",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/wp-block-editor/v1/url-details",
+      "namespace": "wp-block-editor/v1",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "url"
+          ],
+          "requiredArguments": [
+            "url"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/wp-site-health/v1",
+      "namespace": "wp-site-health/v1",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "context",
+            "namespace"
+          ],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/wp-site-health/v1/directory-sizes",
+      "namespace": "wp-site-health/v1",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/wp-site-health/v1/tests/authorization-header",
+      "namespace": "wp-site-health/v1",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/wp-site-health/v1/tests/background-updates",
+      "namespace": "wp-site-health/v1",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/wp-site-health/v1/tests/dotorg-communication",
+      "namespace": "wp-site-health/v1",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/wp-site-health/v1/tests/https-status",
+      "namespace": "wp-site-health/v1",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/wp-site-health/v1/tests/loopback-requests",
+      "namespace": "wp-site-health/v1",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "context",
+            "namespace"
+          ],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/avada_faq",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "after",
+            "author",
+            "author_exclude",
+            "before",
+            "context",
+            "exclude",
+            "faq_category",
+            "faq_category_exclude",
+            "include",
+            "menu_order",
+            "modified_after",
+            "modified_before",
+            "offset",
+            "order",
+            "orderby",
+            "page",
+            "per_page",
+            "search",
+            "slug",
+            "status",
+            "tax_relation"
+          ],
+          "requiredArguments": []
+        },
+        {
+          "methods": [
+            "POST"
+          ],
+          "argumentNames": [
+            "author",
+            "comment_status",
+            "content",
+            "date",
+            "date_gmt",
+            "excerpt",
+            "faq_category",
+            "featured_media",
+            "format",
+            "menu_order",
+            "meta",
+            "password",
+            "ping_status",
+            "slug",
+            "status",
+            "template",
+            "title"
+          ],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/avada_faq/(?P<id>[\\d]+)",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "context",
+            "id",
+            "password"
+          ],
+          "requiredArguments": []
+        },
+        {
+          "methods": [
+            "PATCH",
+            "POST",
+            "PUT"
+          ],
+          "argumentNames": [
+            "author",
+            "comment_status",
+            "content",
+            "date",
+            "date_gmt",
+            "excerpt",
+            "faq_category",
+            "featured_media",
+            "format",
+            "id",
+            "menu_order",
+            "meta",
+            "password",
+            "ping_status",
+            "slug",
+            "status",
+            "template",
+            "title"
+          ],
+          "requiredArguments": []
+        },
+        {
+          "methods": [
+            "DELETE"
+          ],
+          "argumentNames": [
+            "force",
+            "id"
+          ],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/avada_faq/(?P<id>[\\d]+)/autosaves",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "context",
+            "parent"
+          ],
+          "requiredArguments": []
+        },
+        {
+          "methods": [
+            "POST"
+          ],
+          "argumentNames": [
+            "author",
+            "comment_status",
+            "content",
+            "date",
+            "date_gmt",
+            "excerpt",
+            "faq_category",
+            "featured_media",
+            "format",
+            "menu_order",
+            "meta",
+            "parent",
+            "password",
+            "ping_status",
+            "slug",
+            "status",
+            "template",
+            "title"
+          ],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/avada_faq/(?P<parent>[\\d]+)/autosaves/(?P<id>[\\d]+)",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "context",
+            "id",
+            "parent"
+          ],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/avada_faq/(?P<parent>[\\d]+)/revisions",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "context",
+            "exclude",
+            "include",
+            "offset",
+            "order",
+            "orderby",
+            "page",
+            "parent",
+            "per_page",
+            "search"
+          ],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/avada_faq/(?P<parent>[\\d]+)/revisions/(?P<id>[\\d]+)",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "context",
+            "id",
+            "parent"
+          ],
+          "requiredArguments": []
+        },
+        {
+          "methods": [
+            "DELETE"
+          ],
+          "argumentNames": [
+            "force",
+            "id",
+            "parent"
+          ],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/avada_portfolio",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "after",
+            "author",
+            "author_exclude",
+            "before",
+            "context",
+            "exclude",
+            "include",
+            "menu_order",
+            "modified_after",
+            "modified_before",
+            "offset",
+            "order",
+            "orderby",
+            "page",
+            "per_page",
+            "portfolio_category",
+            "portfolio_category_exclude",
+            "portfolio_skills",
+            "portfolio_skills_exclude",
+            "portfolio_tags",
+            "portfolio_tags_exclude",
+            "search",
+            "slug",
+            "status",
+            "tax_relation"
+          ],
+          "requiredArguments": []
+        },
+        {
+          "methods": [
+            "POST"
+          ],
+          "argumentNames": [
+            "author",
+            "comment_status",
+            "content",
+            "date",
+            "date_gmt",
+            "excerpt",
+            "featured_media",
+            "format",
+            "menu_order",
+            "meta",
+            "password",
+            "ping_status",
+            "portfolio_category",
+            "portfolio_skills",
+            "portfolio_tags",
+            "slug",
+            "status",
+            "template",
+            "title"
+          ],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/avada_portfolio/(?P<id>[\\d]+)",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "context",
+            "id",
+            "password"
+          ],
+          "requiredArguments": []
+        },
+        {
+          "methods": [
+            "PATCH",
+            "POST",
+            "PUT"
+          ],
+          "argumentNames": [
+            "author",
+            "comment_status",
+            "content",
+            "date",
+            "date_gmt",
+            "excerpt",
+            "featured_media",
+            "format",
+            "id",
+            "menu_order",
+            "meta",
+            "password",
+            "ping_status",
+            "portfolio_category",
+            "portfolio_skills",
+            "portfolio_tags",
+            "slug",
+            "status",
+            "template",
+            "title"
+          ],
+          "requiredArguments": []
+        },
+        {
+          "methods": [
+            "DELETE"
+          ],
+          "argumentNames": [
+            "force",
+            "id"
+          ],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/avada_portfolio/(?P<id>[\\d]+)/autosaves",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "context",
+            "parent"
+          ],
+          "requiredArguments": []
+        },
+        {
+          "methods": [
+            "POST"
+          ],
+          "argumentNames": [
+            "author",
+            "comment_status",
+            "content",
+            "date",
+            "date_gmt",
+            "excerpt",
+            "featured_media",
+            "format",
+            "menu_order",
+            "meta",
+            "parent",
+            "password",
+            "ping_status",
+            "portfolio_category",
+            "portfolio_skills",
+            "portfolio_tags",
+            "slug",
+            "status",
+            "template",
+            "title"
+          ],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/avada_portfolio/(?P<parent>[\\d]+)/autosaves/(?P<id>[\\d]+)",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "context",
+            "id",
+            "parent"
+          ],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/avada_portfolio/(?P<parent>[\\d]+)/revisions",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "context",
+            "exclude",
+            "include",
+            "offset",
+            "order",
+            "orderby",
+            "page",
+            "parent",
+            "per_page",
+            "search"
+          ],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/avada_portfolio/(?P<parent>[\\d]+)/revisions/(?P<id>[\\d]+)",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "context",
+            "id",
+            "parent"
+          ],
+          "requiredArguments": []
+        },
+        {
+          "methods": [
+            "DELETE"
+          ],
+          "argumentNames": [
+            "force",
+            "id",
+            "parent"
+          ],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/block-directory/search",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "context",
+            "page",
+            "per_page",
+            "term"
+          ],
+          "requiredArguments": [
+            "term"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/block-renderer/(?P<name>[a-z0-9-]+/[a-z0-9-]+)",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET",
+            "POST"
+          ],
+          "argumentNames": [
+            "attributes",
+            "context",
+            "name",
+            "post_id"
+          ],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/block-types",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "context",
+            "namespace"
+          ],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/block-types/(?P<namespace>[a-zA-Z0-9_-]+)",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "context",
+            "namespace"
+          ],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/block-types/(?P<namespace>[a-zA-Z0-9_-]+)/(?P<name>[a-zA-Z0-9_-]+)",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "context",
+            "name",
+            "namespace"
+          ],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/blocks",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "after",
+            "before",
+            "context",
+            "exclude",
+            "include",
+            "modified_after",
+            "modified_before",
+            "offset",
+            "order",
+            "orderby",
+            "page",
+            "per_page",
+            "search",
+            "slug",
+            "status"
+          ],
+          "requiredArguments": []
+        },
+        {
+          "methods": [
+            "POST"
+          ],
+          "argumentNames": [
+            "content",
+            "date",
+            "date_gmt",
+            "password",
+            "slug",
+            "status",
+            "template",
+            "title"
+          ],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/blocks/(?P<id>[\\d]+)",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "context",
+            "id",
+            "password"
+          ],
+          "requiredArguments": []
+        },
+        {
+          "methods": [
+            "PATCH",
+            "POST",
+            "PUT"
+          ],
+          "argumentNames": [
+            "content",
+            "date",
+            "date_gmt",
+            "id",
+            "password",
+            "slug",
+            "status",
+            "template",
+            "title"
+          ],
+          "requiredArguments": []
+        },
+        {
+          "methods": [
+            "DELETE"
+          ],
+          "argumentNames": [
+            "force",
+            "id"
+          ],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/blocks/(?P<id>[\\d]+)/autosaves",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "context",
+            "parent"
+          ],
+          "requiredArguments": []
+        },
+        {
+          "methods": [
+            "POST"
+          ],
+          "argumentNames": [
+            "content",
+            "date",
+            "date_gmt",
+            "parent",
+            "password",
+            "slug",
+            "status",
+            "template",
+            "title"
+          ],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/blocks/(?P<parent>[\\d]+)/autosaves/(?P<id>[\\d]+)",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "context",
+            "id",
+            "parent"
+          ],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/blocks/(?P<parent>[\\d]+)/revisions",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "context",
+            "exclude",
+            "include",
+            "offset",
+            "order",
+            "orderby",
+            "page",
+            "parent",
+            "per_page",
+            "search"
+          ],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/blocks/(?P<parent>[\\d]+)/revisions/(?P<id>[\\d]+)",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "context",
+            "id",
+            "parent"
+          ],
+          "requiredArguments": []
+        },
+        {
+          "methods": [
+            "DELETE"
+          ],
+          "argumentNames": [
+            "force",
+            "id",
+            "parent"
+          ],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/categories",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "context",
+            "exclude",
+            "hide_empty",
+            "include",
+            "order",
+            "orderby",
+            "page",
+            "parent",
+            "per_page",
+            "post",
+            "search",
+            "slug"
+          ],
+          "requiredArguments": []
+        },
+        {
+          "methods": [
+            "POST"
+          ],
+          "argumentNames": [
+            "description",
+            "meta",
+            "name",
+            "parent",
+            "slug"
+          ],
+          "requiredArguments": [
+            "name"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/categories/(?P<id>[\\d]+)",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "context",
+            "id"
+          ],
+          "requiredArguments": []
+        },
+        {
+          "methods": [
+            "PATCH",
+            "POST",
+            "PUT"
+          ],
+          "argumentNames": [
+            "description",
+            "id",
+            "meta",
+            "name",
+            "parent",
+            "slug"
+          ],
+          "requiredArguments": []
+        },
+        {
+          "methods": [
+            "DELETE"
+          ],
+          "argumentNames": [
+            "force",
+            "id"
+          ],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/comments",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "after",
+            "author",
+            "author_email",
+            "author_exclude",
+            "before",
+            "context",
+            "exclude",
+            "include",
+            "offset",
+            "order",
+            "orderby",
+            "page",
+            "parent",
+            "parent_exclude",
+            "password",
+            "per_page",
+            "post",
+            "search",
+            "status",
+            "type"
+          ],
+          "requiredArguments": []
+        },
+        {
+          "methods": [
+            "POST"
+          ],
+          "argumentNames": [
+            "author",
+            "author_email",
+            "author_ip",
+            "author_name",
+            "author_url",
+            "author_user_agent",
+            "content",
+            "date",
+            "date_gmt",
+            "meta",
+            "parent",
+            "post",
+            "status"
+          ],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/comments/(?P<id>[\\d]+)",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "context",
+            "id",
+            "password"
+          ],
+          "requiredArguments": []
+        },
+        {
+          "methods": [
+            "PATCH",
+            "POST",
+            "PUT"
+          ],
+          "argumentNames": [
+            "author",
+            "author_email",
+            "author_ip",
+            "author_name",
+            "author_url",
+            "author_user_agent",
+            "content",
+            "date",
+            "date_gmt",
+            "id",
+            "meta",
+            "parent",
+            "post",
+            "status"
+          ],
+          "requiredArguments": []
+        },
+        {
+          "methods": [
+            "DELETE"
+          ],
+          "argumentNames": [
+            "force",
+            "id",
+            "password"
+          ],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/endo_wrc_cpt",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "after",
+            "before",
+            "context",
+            "endo_wrc_group",
+            "endo_wrc_group_exclude",
+            "exclude",
+            "include",
+            "modified_after",
+            "modified_before",
+            "offset",
+            "order",
+            "orderby",
+            "page",
+            "per_page",
+            "search",
+            "slug",
+            "status",
+            "tax_relation"
+          ],
+          "requiredArguments": []
+        },
+        {
+          "methods": [
+            "POST"
+          ],
+          "argumentNames": [
+            "content",
+            "date",
+            "date_gmt",
+            "endo_wrc_group",
+            "password",
+            "slug",
+            "status",
+            "template",
+            "title"
+          ],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/endo_wrc_cpt/(?P<id>[\\d]+)",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "context",
+            "id",
+            "password"
+          ],
+          "requiredArguments": []
+        },
+        {
+          "methods": [
+            "PATCH",
+            "POST",
+            "PUT"
+          ],
+          "argumentNames": [
+            "content",
+            "date",
+            "date_gmt",
+            "endo_wrc_group",
+            "id",
+            "password",
+            "slug",
+            "status",
+            "template",
+            "title"
+          ],
+          "requiredArguments": []
+        },
+        {
+          "methods": [
+            "DELETE"
+          ],
+          "argumentNames": [
+            "force",
+            "id"
+          ],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/endo_wrc_cpt/(?P<id>[\\d]+)/autosaves",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "context",
+            "parent"
+          ],
+          "requiredArguments": []
+        },
+        {
+          "methods": [
+            "POST"
+          ],
+          "argumentNames": [
+            "content",
+            "date",
+            "date_gmt",
+            "endo_wrc_group",
+            "parent",
+            "password",
+            "slug",
+            "status",
+            "template",
+            "title"
+          ],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/endo_wrc_cpt/(?P<parent>[\\d]+)/autosaves/(?P<id>[\\d]+)",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "context",
+            "id",
+            "parent"
+          ],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/endo_wrc_group",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "context",
+            "exclude",
+            "hide_empty",
+            "include",
+            "order",
+            "orderby",
+            "page",
+            "parent",
+            "per_page",
+            "post",
+            "search",
+            "slug"
+          ],
+          "requiredArguments": []
+        },
+        {
+          "methods": [
+            "POST"
+          ],
+          "argumentNames": [
+            "description",
+            "meta",
+            "name",
+            "parent",
+            "slug"
+          ],
+          "requiredArguments": [
+            "name"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/endo_wrc_group/(?P<id>[\\d]+)",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "context",
+            "id"
+          ],
+          "requiredArguments": []
+        },
+        {
+          "methods": [
+            "PATCH",
+            "POST",
+            "PUT"
+          ],
+          "argumentNames": [
+            "description",
+            "id",
+            "meta",
+            "name",
+            "parent",
+            "slug"
+          ],
+          "requiredArguments": []
+        },
+        {
+          "methods": [
+            "DELETE"
+          ],
+          "argumentNames": [
+            "force",
+            "id"
+          ],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/faq_category",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "context",
+            "exclude",
+            "hide_empty",
+            "include",
+            "order",
+            "orderby",
+            "page",
+            "parent",
+            "per_page",
+            "post",
+            "search",
+            "slug"
+          ],
+          "requiredArguments": []
+        },
+        {
+          "methods": [
+            "POST"
+          ],
+          "argumentNames": [
+            "description",
+            "meta",
+            "name",
+            "parent",
+            "slug"
+          ],
+          "requiredArguments": [
+            "name"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/faq_category/(?P<id>[\\d]+)",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "context",
+            "id"
+          ],
+          "requiredArguments": []
+        },
+        {
+          "methods": [
+            "PATCH",
+            "POST",
+            "PUT"
+          ],
+          "argumentNames": [
+            "description",
+            "id",
+            "meta",
+            "name",
+            "parent",
+            "slug"
+          ],
+          "requiredArguments": []
+        },
+        {
+          "methods": [
+            "DELETE"
+          ],
+          "argumentNames": [
+            "force",
+            "id"
+          ],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/global-styles/(?P<id>[\\/\\w-]+)",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "id"
+          ],
+          "requiredArguments": []
+        },
+        {
+          "methods": [
+            "PATCH",
+            "POST",
+            "PUT"
+          ],
+          "argumentNames": [
+            "settings",
+            "styles",
+            "title"
+          ],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/global-styles/themes/(?P<stylesheet>[^\\/:<>\\*\\?\"\\|]+(?:\\/[^\\/:<>\\*\\?\"\\|]+)?)",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "stylesheet"
+          ],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/mec-events",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "after",
+            "author",
+            "author_exclude",
+            "before",
+            "context",
+            "exclude",
+            "include",
+            "mec_category",
+            "mec_category_exclude",
+            "modified_after",
+            "modified_before",
+            "offset",
+            "order",
+            "orderby",
+            "page",
+            "per_page",
+            "search",
+            "slug",
+            "status",
+            "tags",
+            "tags_exclude",
+            "tax_relation"
+          ],
+          "requiredArguments": []
+        },
+        {
+          "methods": [
+            "POST"
+          ],
+          "argumentNames": [
+            "author",
+            "comment_status",
+            "content",
+            "date",
+            "date_gmt",
+            "excerpt",
+            "featured_media",
+            "mec_category",
+            "password",
+            "ping_status",
+            "slug",
+            "status",
+            "tags",
+            "template",
+            "title"
+          ],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/mec-events/(?P<id>[\\d]+)",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "context",
+            "id",
+            "password"
+          ],
+          "requiredArguments": []
+        },
+        {
+          "methods": [
+            "PATCH",
+            "POST",
+            "PUT"
+          ],
+          "argumentNames": [
+            "author",
+            "comment_status",
+            "content",
+            "date",
+            "date_gmt",
+            "excerpt",
+            "featured_media",
+            "id",
+            "mec_category",
+            "password",
+            "ping_status",
+            "slug",
+            "status",
+            "tags",
+            "template",
+            "title"
+          ],
+          "requiredArguments": []
+        },
+        {
+          "methods": [
+            "DELETE"
+          ],
+          "argumentNames": [
+            "force",
+            "id"
+          ],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/mec-events/(?P<id>[\\d]+)/autosaves",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "context",
+            "parent"
+          ],
+          "requiredArguments": []
+        },
+        {
+          "methods": [
+            "POST"
+          ],
+          "argumentNames": [
+            "author",
+            "comment_status",
+            "content",
+            "date",
+            "date_gmt",
+            "excerpt",
+            "featured_media",
+            "mec_category",
+            "parent",
+            "password",
+            "ping_status",
+            "slug",
+            "status",
+            "tags",
+            "template",
+            "title"
+          ],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/mec-events/(?P<parent>[\\d]+)/autosaves/(?P<id>[\\d]+)",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "context",
+            "id",
+            "parent"
+          ],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/mec_category",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "context",
+            "exclude",
+            "hide_empty",
+            "include",
+            "order",
+            "orderby",
+            "page",
+            "parent",
+            "per_page",
+            "post",
+            "search",
+            "slug"
+          ],
+          "requiredArguments": []
+        },
+        {
+          "methods": [
+            "POST"
+          ],
+          "argumentNames": [
+            "description",
+            "meta",
+            "name",
+            "parent",
+            "slug"
+          ],
+          "requiredArguments": [
+            "name"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/mec_category/(?P<id>[\\d]+)",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "context",
+            "id"
+          ],
+          "requiredArguments": []
+        },
+        {
+          "methods": [
+            "PATCH",
+            "POST",
+            "PUT"
+          ],
+          "argumentNames": [
+            "description",
+            "id",
+            "meta",
+            "name",
+            "parent",
+            "slug"
+          ],
+          "requiredArguments": []
+        },
+        {
+          "methods": [
+            "DELETE"
+          ],
+          "argumentNames": [
+            "force",
+            "id"
+          ],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/media",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "after",
+            "author",
+            "author_exclude",
+            "before",
+            "context",
+            "exclude",
+            "include",
+            "media_type",
+            "mime_type",
+            "modified_after",
+            "modified_before",
+            "offset",
+            "order",
+            "orderby",
+            "page",
+            "parent",
+            "parent_exclude",
+            "per_page",
+            "search",
+            "slug",
+            "status"
+          ],
+          "requiredArguments": []
+        },
+        {
+          "methods": [
+            "POST"
+          ],
+          "argumentNames": [
+            "alt_text",
+            "author",
+            "caption",
+            "comment_status",
+            "date",
+            "date_gmt",
+            "description",
+            "meta",
+            "ping_status",
+            "post",
+            "slug",
+            "status",
+            "template",
+            "title"
+          ],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/media/(?P<id>[\\d]+)",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "context",
+            "id"
+          ],
+          "requiredArguments": []
+        },
+        {
+          "methods": [
+            "PATCH",
+            "POST",
+            "PUT"
+          ],
+          "argumentNames": [
+            "alt_text",
+            "author",
+            "caption",
+            "comment_status",
+            "date",
+            "date_gmt",
+            "description",
+            "id",
+            "meta",
+            "ping_status",
+            "post",
+            "slug",
+            "status",
+            "template",
+            "title"
+          ],
+          "requiredArguments": []
+        },
+        {
+          "methods": [
+            "DELETE"
+          ],
+          "argumentNames": [
+            "force",
+            "id"
+          ],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/media/(?P<id>[\\d]+)/edit",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "POST"
+          ],
+          "argumentNames": [
+            "height",
+            "modifiers",
+            "rotation",
+            "src",
+            "width",
+            "x",
+            "y"
+          ],
+          "requiredArguments": [
+            "src"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/media/(?P<id>[\\d]+)/post-process",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "POST"
+          ],
+          "argumentNames": [
+            "action",
+            "id"
+          ],
+          "requiredArguments": [
+            "action"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/menu-items",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "after",
+            "before",
+            "context",
+            "exclude",
+            "include",
+            "menu_order",
+            "menus",
+            "menus_exclude",
+            "modified_after",
+            "modified_before",
+            "offset",
+            "order",
+            "orderby",
+            "page",
+            "per_page",
+            "search",
+            "slug",
+            "status",
+            "tax_relation"
+          ],
+          "requiredArguments": []
+        },
+        {
+          "methods": [
+            "POST"
+          ],
+          "argumentNames": [
+            "attr_title",
+            "classes",
+            "description",
+            "menu_order",
+            "menus",
+            "meta",
+            "object",
+            "object_id",
+            "parent",
+            "status",
+            "target",
+            "title",
+            "type",
+            "url",
+            "xfn"
+          ],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/menu-items/(?P<id>[\\d]+)",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "context",
+            "id"
+          ],
+          "requiredArguments": []
+        },
+        {
+          "methods": [
+            "PATCH",
+            "POST",
+            "PUT"
+          ],
+          "argumentNames": [
+            "attr_title",
+            "classes",
+            "description",
+            "id",
+            "menu_order",
+            "menus",
+            "meta",
+            "object",
+            "object_id",
+            "parent",
+            "status",
+            "target",
+            "title",
+            "type",
+            "url",
+            "xfn"
+          ],
+          "requiredArguments": []
+        },
+        {
+          "methods": [
+            "DELETE"
+          ],
+          "argumentNames": [
+            "force",
+            "id"
+          ],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/menu-items/(?P<id>[\\d]+)/autosaves",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "context",
+            "parent"
+          ],
+          "requiredArguments": []
+        },
+        {
+          "methods": [
+            "POST"
+          ],
+          "argumentNames": [
+            "attr_title",
+            "classes",
+            "description",
+            "menu_order",
+            "menus",
+            "meta",
+            "object",
+            "object_id",
+            "parent",
+            "status",
+            "target",
+            "title",
+            "type",
+            "url",
+            "xfn"
+          ],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/menu-items/(?P<parent>[\\d]+)/autosaves/(?P<id>[\\d]+)",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "context",
+            "id",
+            "parent"
+          ],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/menu-locations",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "context"
+          ],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/menu-locations/(?P<location>[\\w-]+)",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "context",
+            "location"
+          ],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/menus",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "context",
+            "exclude",
+            "hide_empty",
+            "include",
+            "offset",
+            "order",
+            "orderby",
+            "page",
+            "per_page",
+            "post",
+            "search",
+            "slug"
+          ],
+          "requiredArguments": []
+        },
+        {
+          "methods": [
+            "POST"
+          ],
+          "argumentNames": [
+            "auto_add",
+            "description",
+            "locations",
+            "meta",
+            "name",
+            "slug"
+          ],
+          "requiredArguments": [
+            "name"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/menus/(?P<id>[\\d]+)",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "context",
+            "id"
+          ],
+          "requiredArguments": []
+        },
+        {
+          "methods": [
+            "PATCH",
+            "POST",
+            "PUT"
+          ],
+          "argumentNames": [
+            "auto_add",
+            "description",
+            "id",
+            "locations",
+            "meta",
+            "name",
+            "slug"
+          ],
+          "requiredArguments": []
+        },
+        {
+          "methods": [
+            "DELETE"
+          ],
+          "argumentNames": [
+            "force",
+            "id"
+          ],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/navigation",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "after",
+            "before",
+            "context",
+            "exclude",
+            "include",
+            "modified_after",
+            "modified_before",
+            "offset",
+            "order",
+            "orderby",
+            "page",
+            "per_page",
+            "search",
+            "slug",
+            "status"
+          ],
+          "requiredArguments": []
+        },
+        {
+          "methods": [
+            "POST"
+          ],
+          "argumentNames": [
+            "content",
+            "date",
+            "date_gmt",
+            "password",
+            "slug",
+            "status",
+            "template",
+            "title"
+          ],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/navigation/(?P<id>[\\d]+)",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "context",
+            "id",
+            "password"
+          ],
+          "requiredArguments": []
+        },
+        {
+          "methods": [
+            "PATCH",
+            "POST",
+            "PUT"
+          ],
+          "argumentNames": [
+            "content",
+            "date",
+            "date_gmt",
+            "id",
+            "password",
+            "slug",
+            "status",
+            "template",
+            "title"
+          ],
+          "requiredArguments": []
+        },
+        {
+          "methods": [
+            "DELETE"
+          ],
+          "argumentNames": [
+            "force",
+            "id"
+          ],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/navigation/(?P<id>[\\d]+)/autosaves",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "context",
+            "parent"
+          ],
+          "requiredArguments": []
+        },
+        {
+          "methods": [
+            "POST"
+          ],
+          "argumentNames": [
+            "content",
+            "date",
+            "date_gmt",
+            "parent",
+            "password",
+            "slug",
+            "status",
+            "template",
+            "title"
+          ],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/navigation/(?P<parent>[\\d]+)/autosaves/(?P<id>[\\d]+)",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "context",
+            "id",
+            "parent"
+          ],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/navigation/(?P<parent>[\\d]+)/revisions",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "context",
+            "exclude",
+            "include",
+            "offset",
+            "order",
+            "orderby",
+            "page",
+            "parent",
+            "per_page",
+            "search"
+          ],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/navigation/(?P<parent>[\\d]+)/revisions/(?P<id>[\\d]+)",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "context",
+            "id",
+            "parent"
+          ],
+          "requiredArguments": []
+        },
+        {
+          "methods": [
+            "DELETE"
+          ],
+          "argumentNames": [
+            "force",
+            "id",
+            "parent"
+          ],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/news",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "after",
+            "author",
+            "author_exclude",
+            "before",
+            "categories",
+            "categories_exclude",
+            "context",
+            "exclude",
+            "include",
+            "modified_after",
+            "modified_before",
+            "newstags",
+            "newstags_exclude",
+            "offset",
+            "order",
+            "orderby",
+            "page",
+            "per_page",
+            "search",
+            "slug",
+            "status",
+            "tax_relation"
+          ],
+          "requiredArguments": []
+        },
+        {
+          "methods": [
+            "POST"
+          ],
+          "argumentNames": [
+            "author",
+            "categories",
+            "comment_status",
+            "content",
+            "date",
+            "date_gmt",
+            "excerpt",
+            "featured_media",
+            "newstags",
+            "password",
+            "ping_status",
+            "slug",
+            "status",
+            "template",
+            "title"
+          ],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/news/(?P<id>[\\d]+)",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "context",
+            "id",
+            "password"
+          ],
+          "requiredArguments": []
+        },
+        {
+          "methods": [
+            "PATCH",
+            "POST",
+            "PUT"
+          ],
+          "argumentNames": [
+            "author",
+            "categories",
+            "comment_status",
+            "content",
+            "date",
+            "date_gmt",
+            "excerpt",
+            "featured_media",
+            "id",
+            "newstags",
+            "password",
+            "ping_status",
+            "slug",
+            "status",
+            "template",
+            "title"
+          ],
+          "requiredArguments": []
+        },
+        {
+          "methods": [
+            "DELETE"
+          ],
+          "argumentNames": [
+            "force",
+            "id"
+          ],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/news/(?P<id>[\\d]+)/autosaves",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "context",
+            "parent"
+          ],
+          "requiredArguments": []
+        },
+        {
+          "methods": [
+            "POST"
+          ],
+          "argumentNames": [
+            "author",
+            "categories",
+            "comment_status",
+            "content",
+            "date",
+            "date_gmt",
+            "excerpt",
+            "featured_media",
+            "newstags",
+            "parent",
+            "password",
+            "ping_status",
+            "slug",
+            "status",
+            "template",
+            "title"
+          ],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/news/(?P<parent>[\\d]+)/autosaves/(?P<id>[\\d]+)",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "context",
+            "id",
+            "parent"
+          ],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/newstags",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "context",
+            "exclude",
+            "hide_empty",
+            "include",
+            "offset",
+            "order",
+            "orderby",
+            "page",
+            "per_page",
+            "post",
+            "search",
+            "slug"
+          ],
+          "requiredArguments": []
+        },
+        {
+          "methods": [
+            "POST"
+          ],
+          "argumentNames": [
+            "description",
+            "meta",
+            "name",
+            "slug"
+          ],
+          "requiredArguments": [
+            "name"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/newstags/(?P<id>[\\d]+)",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "context",
+            "id"
+          ],
+          "requiredArguments": []
+        },
+        {
+          "methods": [
+            "PATCH",
+            "POST",
+            "PUT"
+          ],
+          "argumentNames": [
+            "description",
+            "id",
+            "meta",
+            "name",
+            "slug"
+          ],
+          "requiredArguments": []
+        },
+        {
+          "methods": [
+            "DELETE"
+          ],
+          "argumentNames": [
+            "force",
+            "id"
+          ],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/pages",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "after",
+            "author",
+            "author_exclude",
+            "before",
+            "context",
+            "exclude",
+            "include",
+            "menu_order",
+            "modified_after",
+            "modified_before",
+            "offset",
+            "order",
+            "orderby",
+            "page",
+            "parent",
+            "parent_exclude",
+            "per_page",
+            "search",
+            "slug",
+            "status"
+          ],
+          "requiredArguments": []
+        },
+        {
+          "methods": [
+            "POST"
+          ],
+          "argumentNames": [
+            "author",
+            "comment_status",
+            "content",
+            "date",
+            "date_gmt",
+            "excerpt",
+            "featured_media",
+            "menu_order",
+            "meta",
+            "parent",
+            "password",
+            "ping_status",
+            "slug",
+            "status",
+            "template",
+            "title"
+          ],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/pages/(?P<id>[\\d]+)",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "context",
+            "id",
+            "password"
+          ],
+          "requiredArguments": []
+        },
+        {
+          "methods": [
+            "PATCH",
+            "POST",
+            "PUT"
+          ],
+          "argumentNames": [
+            "author",
+            "comment_status",
+            "content",
+            "date",
+            "date_gmt",
+            "excerpt",
+            "featured_media",
+            "id",
+            "menu_order",
+            "meta",
+            "parent",
+            "password",
+            "ping_status",
+            "slug",
+            "status",
+            "template",
+            "title"
+          ],
+          "requiredArguments": []
+        },
+        {
+          "methods": [
+            "DELETE"
+          ],
+          "argumentNames": [
+            "force",
+            "id"
+          ],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/pages/(?P<id>[\\d]+)/autosaves",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "context",
+            "parent"
+          ],
+          "requiredArguments": []
+        },
+        {
+          "methods": [
+            "POST"
+          ],
+          "argumentNames": [
+            "author",
+            "comment_status",
+            "content",
+            "date",
+            "date_gmt",
+            "excerpt",
+            "featured_media",
+            "menu_order",
+            "meta",
+            "parent",
+            "password",
+            "ping_status",
+            "slug",
+            "status",
+            "template",
+            "title"
+          ],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/pages/(?P<parent>[\\d]+)/autosaves/(?P<id>[\\d]+)",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "context",
+            "id",
+            "parent"
+          ],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/pages/(?P<parent>[\\d]+)/revisions",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "context",
+            "exclude",
+            "include",
+            "offset",
+            "order",
+            "orderby",
+            "page",
+            "parent",
+            "per_page",
+            "search"
+          ],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/pages/(?P<parent>[\\d]+)/revisions/(?P<id>[\\d]+)",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "context",
+            "id",
+            "parent"
+          ],
+          "requiredArguments": []
+        },
+        {
+          "methods": [
+            "DELETE"
+          ],
+          "argumentNames": [
+            "force",
+            "id",
+            "parent"
+          ],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/pattern-directory/patterns",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "category",
+            "context",
+            "keyword",
+            "search"
+          ],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/plugins",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "context",
+            "search",
+            "status"
+          ],
+          "requiredArguments": []
+        },
+        {
+          "methods": [
+            "POST"
+          ],
+          "argumentNames": [
+            "slug",
+            "status"
+          ],
+          "requiredArguments": [
+            "slug"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/plugins/(?P<plugin>[^.\\/]+(?:\\/[^.\\/]+)?)",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "context",
+            "plugin"
+          ],
+          "requiredArguments": []
+        },
+        {
+          "methods": [
+            "PATCH",
+            "POST",
+            "PUT"
+          ],
+          "argumentNames": [
+            "context",
+            "plugin",
+            "status"
+          ],
+          "requiredArguments": []
+        },
+        {
+          "methods": [
+            "DELETE"
+          ],
+          "argumentNames": [
+            "context",
+            "plugin"
+          ],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/portfolio_category",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "context",
+            "exclude",
+            "hide_empty",
+            "include",
+            "order",
+            "orderby",
+            "page",
+            "parent",
+            "per_page",
+            "post",
+            "search",
+            "slug"
+          ],
+          "requiredArguments": []
+        },
+        {
+          "methods": [
+            "POST"
+          ],
+          "argumentNames": [
+            "description",
+            "meta",
+            "name",
+            "parent",
+            "slug"
+          ],
+          "requiredArguments": [
+            "name"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/portfolio_category/(?P<id>[\\d]+)",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "context",
+            "id"
+          ],
+          "requiredArguments": []
+        },
+        {
+          "methods": [
+            "PATCH",
+            "POST",
+            "PUT"
+          ],
+          "argumentNames": [
+            "description",
+            "id",
+            "meta",
+            "name",
+            "parent",
+            "slug"
+          ],
+          "requiredArguments": []
+        },
+        {
+          "methods": [
+            "DELETE"
+          ],
+          "argumentNames": [
+            "force",
+            "id"
+          ],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/portfolio_skills",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "context",
+            "exclude",
+            "hide_empty",
+            "include",
+            "order",
+            "orderby",
+            "page",
+            "parent",
+            "per_page",
+            "post",
+            "search",
+            "slug"
+          ],
+          "requiredArguments": []
+        },
+        {
+          "methods": [
+            "POST"
+          ],
+          "argumentNames": [
+            "description",
+            "meta",
+            "name",
+            "parent",
+            "slug"
+          ],
+          "requiredArguments": [
+            "name"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/portfolio_skills/(?P<id>[\\d]+)",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "context",
+            "id"
+          ],
+          "requiredArguments": []
+        },
+        {
+          "methods": [
+            "PATCH",
+            "POST",
+            "PUT"
+          ],
+          "argumentNames": [
+            "description",
+            "id",
+            "meta",
+            "name",
+            "parent",
+            "slug"
+          ],
+          "requiredArguments": []
+        },
+        {
+          "methods": [
+            "DELETE"
+          ],
+          "argumentNames": [
+            "force",
+            "id"
+          ],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/portfolio_tags",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "context",
+            "exclude",
+            "hide_empty",
+            "include",
+            "offset",
+            "order",
+            "orderby",
+            "page",
+            "per_page",
+            "post",
+            "search",
+            "slug"
+          ],
+          "requiredArguments": []
+        },
+        {
+          "methods": [
+            "POST"
+          ],
+          "argumentNames": [
+            "description",
+            "meta",
+            "name",
+            "slug"
+          ],
+          "requiredArguments": [
+            "name"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/portfolio_tags/(?P<id>[\\d]+)",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "context",
+            "id"
+          ],
+          "requiredArguments": []
+        },
+        {
+          "methods": [
+            "PATCH",
+            "POST",
+            "PUT"
+          ],
+          "argumentNames": [
+            "description",
+            "id",
+            "meta",
+            "name",
+            "slug"
+          ],
+          "requiredArguments": []
+        },
+        {
+          "methods": [
+            "DELETE"
+          ],
+          "argumentNames": [
+            "force",
+            "id"
+          ],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/posts",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "after",
+            "author",
+            "author_exclude",
+            "before",
+            "categories",
+            "categories_exclude",
+            "context",
+            "exclude",
+            "include",
+            "modified_after",
+            "modified_before",
+            "offset",
+            "order",
+            "orderby",
+            "page",
+            "per_page",
+            "search",
+            "slug",
+            "status",
+            "sticky",
+            "tags",
+            "tags_exclude",
+            "tax_relation"
+          ],
+          "requiredArguments": []
+        },
+        {
+          "methods": [
+            "POST"
+          ],
+          "argumentNames": [
+            "author",
+            "categories",
+            "comment_status",
+            "content",
+            "date",
+            "date_gmt",
+            "excerpt",
+            "featured_media",
+            "format",
+            "meta",
+            "password",
+            "ping_status",
+            "slug",
+            "status",
+            "sticky",
+            "tags",
+            "template",
+            "title"
+          ],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/posts/(?P<id>[\\d]+)",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "context",
+            "id",
+            "password"
+          ],
+          "requiredArguments": []
+        },
+        {
+          "methods": [
+            "PATCH",
+            "POST",
+            "PUT"
+          ],
+          "argumentNames": [
+            "author",
+            "categories",
+            "comment_status",
+            "content",
+            "date",
+            "date_gmt",
+            "excerpt",
+            "featured_media",
+            "format",
+            "id",
+            "meta",
+            "password",
+            "ping_status",
+            "slug",
+            "status",
+            "sticky",
+            "tags",
+            "template",
+            "title"
+          ],
+          "requiredArguments": []
+        },
+        {
+          "methods": [
+            "DELETE"
+          ],
+          "argumentNames": [
+            "force",
+            "id"
+          ],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/posts/(?P<id>[\\d]+)/autosaves",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "context",
+            "parent"
+          ],
+          "requiredArguments": []
+        },
+        {
+          "methods": [
+            "POST"
+          ],
+          "argumentNames": [
+            "author",
+            "categories",
+            "comment_status",
+            "content",
+            "date",
+            "date_gmt",
+            "excerpt",
+            "featured_media",
+            "format",
+            "meta",
+            "parent",
+            "password",
+            "ping_status",
+            "slug",
+            "status",
+            "sticky",
+            "tags",
+            "template",
+            "title"
+          ],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/posts/(?P<parent>[\\d]+)/autosaves/(?P<id>[\\d]+)",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "context",
+            "id",
+            "parent"
+          ],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/posts/(?P<parent>[\\d]+)/revisions",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "context",
+            "exclude",
+            "include",
+            "offset",
+            "order",
+            "orderby",
+            "page",
+            "parent",
+            "per_page",
+            "search"
+          ],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/posts/(?P<parent>[\\d]+)/revisions/(?P<id>[\\d]+)",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "context",
+            "id",
+            "parent"
+          ],
+          "requiredArguments": []
+        },
+        {
+          "methods": [
+            "DELETE"
+          ],
+          "argumentNames": [
+            "force",
+            "id",
+            "parent"
+          ],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/search",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "context",
+            "page",
+            "per_page",
+            "search",
+            "subtype",
+            "type"
+          ],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/settings",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [],
+          "requiredArguments": []
+        },
+        {
+          "methods": [
+            "PATCH",
+            "POST",
+            "PUT"
+          ],
+          "argumentNames": [
+            "date_format",
+            "default_category",
+            "default_comment_status",
+            "default_ping_status",
+            "default_post_format",
+            "description",
+            "email",
+            "language",
+            "posts_per_page",
+            "site_icon",
+            "site_logo",
+            "start_of_week",
+            "time_format",
+            "timezone",
+            "title",
+            "url",
+            "use_smilies"
+          ],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/sidebars",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "context"
+          ],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/sidebars/(?P<id>[\\w-]+)",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "context",
+            "id"
+          ],
+          "requiredArguments": []
+        },
+        {
+          "methods": [
+            "PATCH",
+            "POST",
+            "PUT"
+          ],
+          "argumentNames": [
+            "widgets"
+          ],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/statuses",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "context"
+          ],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/statuses/(?P<status>[\\w-]+)",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "context",
+            "status"
+          ],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/tags",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "context",
+            "exclude",
+            "hide_empty",
+            "include",
+            "offset",
+            "order",
+            "orderby",
+            "page",
+            "per_page",
+            "post",
+            "search",
+            "slug"
+          ],
+          "requiredArguments": []
+        },
+        {
+          "methods": [
+            "POST"
+          ],
+          "argumentNames": [
+            "description",
+            "meta",
+            "name",
+            "slug"
+          ],
+          "requiredArguments": [
+            "name"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/tags/(?P<id>[\\d]+)",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "context",
+            "id"
+          ],
+          "requiredArguments": []
+        },
+        {
+          "methods": [
+            "PATCH",
+            "POST",
+            "PUT"
+          ],
+          "argumentNames": [
+            "description",
+            "id",
+            "meta",
+            "name",
+            "slug"
+          ],
+          "requiredArguments": []
+        },
+        {
+          "methods": [
+            "DELETE"
+          ],
+          "argumentNames": [
+            "force",
+            "id"
+          ],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/taxonomies",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "context",
+            "type"
+          ],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/taxonomies/(?P<taxonomy>[\\w-]+)",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "context",
+            "taxonomy"
+          ],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/template-parts",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "area",
+            "context",
+            "post_type",
+            "wp_id"
+          ],
+          "requiredArguments": []
+        },
+        {
+          "methods": [
+            "POST"
+          ],
+          "argumentNames": [
+            "area",
+            "author",
+            "content",
+            "description",
+            "slug",
+            "status",
+            "theme",
+            "title",
+            "type"
+          ],
+          "requiredArguments": [
+            "slug"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/template-parts/(?P<id>([^\\/:<>\\*\\?\"\\|]+(?:\\/[^\\/:<>\\*\\?\"\\|]+)?)[\\/\\w-]+)",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "context",
+            "id"
+          ],
+          "requiredArguments": []
+        },
+        {
+          "methods": [
+            "PATCH",
+            "POST",
+            "PUT"
+          ],
+          "argumentNames": [
+            "area",
+            "author",
+            "content",
+            "description",
+            "id",
+            "slug",
+            "status",
+            "theme",
+            "title",
+            "type"
+          ],
+          "requiredArguments": []
+        },
+        {
+          "methods": [
+            "DELETE"
+          ],
+          "argumentNames": [
+            "force",
+            "id"
+          ],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/template-parts/(?P<id>[\\d]+)/autosaves",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "context",
+            "parent"
+          ],
+          "requiredArguments": []
+        },
+        {
+          "methods": [
+            "POST"
+          ],
+          "argumentNames": [
+            "area",
+            "author",
+            "content",
+            "description",
+            "parent",
+            "slug",
+            "status",
+            "theme",
+            "title",
+            "type"
+          ],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/template-parts/(?P<parent>[\\d]+)/autosaves/(?P<id>[\\d]+)",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "context",
+            "id",
+            "parent"
+          ],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/template-parts/(?P<parent>[\\d]+)/revisions",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "context",
+            "exclude",
+            "include",
+            "offset",
+            "order",
+            "orderby",
+            "page",
+            "parent",
+            "per_page",
+            "search"
+          ],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/template-parts/(?P<parent>[\\d]+)/revisions/(?P<id>[\\d]+)",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "context",
+            "id",
+            "parent"
+          ],
+          "requiredArguments": []
+        },
+        {
+          "methods": [
+            "DELETE"
+          ],
+          "argumentNames": [
+            "force",
+            "id",
+            "parent"
+          ],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/templates",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "area",
+            "context",
+            "post_type",
+            "wp_id"
+          ],
+          "requiredArguments": []
+        },
+        {
+          "methods": [
+            "POST"
+          ],
+          "argumentNames": [
+            "author",
+            "content",
+            "description",
+            "slug",
+            "status",
+            "theme",
+            "title",
+            "type"
+          ],
+          "requiredArguments": [
+            "slug"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/templates/(?P<id>([^\\/:<>\\*\\?\"\\|]+(?:\\/[^\\/:<>\\*\\?\"\\|]+)?)[\\/\\w-]+)",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "context",
+            "id"
+          ],
+          "requiredArguments": []
+        },
+        {
+          "methods": [
+            "PATCH",
+            "POST",
+            "PUT"
+          ],
+          "argumentNames": [
+            "author",
+            "content",
+            "description",
+            "id",
+            "slug",
+            "status",
+            "theme",
+            "title",
+            "type"
+          ],
+          "requiredArguments": []
+        },
+        {
+          "methods": [
+            "DELETE"
+          ],
+          "argumentNames": [
+            "force",
+            "id"
+          ],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/templates/(?P<id>[\\d]+)/autosaves",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "context",
+            "parent"
+          ],
+          "requiredArguments": []
+        },
+        {
+          "methods": [
+            "POST"
+          ],
+          "argumentNames": [
+            "author",
+            "content",
+            "description",
+            "parent",
+            "slug",
+            "status",
+            "theme",
+            "title",
+            "type"
+          ],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/templates/(?P<parent>[\\d]+)/autosaves/(?P<id>[\\d]+)",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "context",
+            "id",
+            "parent"
+          ],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/templates/(?P<parent>[\\d]+)/revisions",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "context",
+            "exclude",
+            "include",
+            "offset",
+            "order",
+            "orderby",
+            "page",
+            "parent",
+            "per_page",
+            "search"
+          ],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/templates/(?P<parent>[\\d]+)/revisions/(?P<id>[\\d]+)",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "context",
+            "id",
+            "parent"
+          ],
+          "requiredArguments": []
+        },
+        {
+          "methods": [
+            "DELETE"
+          ],
+          "argumentNames": [
+            "force",
+            "id",
+            "parent"
+          ],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/themes",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "status"
+          ],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/themes/(?P<stylesheet>[^\\/:<>\\*\\?\"\\|]+(?:\\/[^\\/:<>\\*\\?\"\\|]+)?)",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "stylesheet"
+          ],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/types",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "context"
+          ],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/types/(?P<type>[\\w-]+)",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "context",
+            "type"
+          ],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/um_directory",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "after",
+            "before",
+            "context",
+            "exclude",
+            "include",
+            "modified_after",
+            "modified_before",
+            "offset",
+            "order",
+            "orderby",
+            "page",
+            "per_page",
+            "search",
+            "slug",
+            "status"
+          ],
+          "requiredArguments": []
+        },
+        {
+          "methods": [
+            "POST"
+          ],
+          "argumentNames": [
+            "date",
+            "date_gmt",
+            "password",
+            "slug",
+            "status",
+            "template",
+            "title"
+          ],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/um_directory/(?P<id>[\\d]+)",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "context",
+            "id",
+            "password"
+          ],
+          "requiredArguments": []
+        },
+        {
+          "methods": [
+            "PATCH",
+            "POST",
+            "PUT"
+          ],
+          "argumentNames": [
+            "date",
+            "date_gmt",
+            "id",
+            "password",
+            "slug",
+            "status",
+            "template",
+            "title"
+          ],
+          "requiredArguments": []
+        },
+        {
+          "methods": [
+            "DELETE"
+          ],
+          "argumentNames": [
+            "force",
+            "id"
+          ],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/um_directory/(?P<id>[\\d]+)/autosaves",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "context",
+            "parent"
+          ],
+          "requiredArguments": []
+        },
+        {
+          "methods": [
+            "POST"
+          ],
+          "argumentNames": [
+            "date",
+            "date_gmt",
+            "parent",
+            "password",
+            "slug",
+            "status",
+            "template",
+            "title"
+          ],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/um_directory/(?P<parent>[\\d]+)/autosaves/(?P<id>[\\d]+)",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "context",
+            "id",
+            "parent"
+          ],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/um_form",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "after",
+            "before",
+            "context",
+            "exclude",
+            "include",
+            "modified_after",
+            "modified_before",
+            "offset",
+            "order",
+            "orderby",
+            "page",
+            "per_page",
+            "search",
+            "slug",
+            "status"
+          ],
+          "requiredArguments": []
+        },
+        {
+          "methods": [
+            "POST"
+          ],
+          "argumentNames": [
+            "date",
+            "date_gmt",
+            "password",
+            "slug",
+            "status",
+            "template",
+            "title"
+          ],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/um_form/(?P<id>[\\d]+)",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "context",
+            "id",
+            "password"
+          ],
+          "requiredArguments": []
+        },
+        {
+          "methods": [
+            "PATCH",
+            "POST",
+            "PUT"
+          ],
+          "argumentNames": [
+            "date",
+            "date_gmt",
+            "id",
+            "password",
+            "slug",
+            "status",
+            "template",
+            "title"
+          ],
+          "requiredArguments": []
+        },
+        {
+          "methods": [
+            "DELETE"
+          ],
+          "argumentNames": [
+            "force",
+            "id"
+          ],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/um_form/(?P<id>[\\d]+)/autosaves",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "context",
+            "parent"
+          ],
+          "requiredArguments": []
+        },
+        {
+          "methods": [
+            "POST"
+          ],
+          "argumentNames": [
+            "date",
+            "date_gmt",
+            "parent",
+            "password",
+            "slug",
+            "status",
+            "template",
+            "title"
+          ],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/um_form/(?P<parent>[\\d]+)/autosaves/(?P<id>[\\d]+)",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "context",
+            "id",
+            "parent"
+          ],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/users",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "capabilities",
+            "context",
+            "exclude",
+            "has_published_posts",
+            "include",
+            "offset",
+            "order",
+            "orderby",
+            "page",
+            "per_page",
+            "roles",
+            "search",
+            "slug",
+            "who"
+          ],
+          "requiredArguments": []
+        },
+        {
+          "methods": [
+            "POST"
+          ],
+          "argumentNames": [
+            "description",
+            "email",
+            "first_name",
+            "last_name",
+            "locale",
+            "meta",
+            "name",
+            "nickname",
+            "password",
+            "roles",
+            "slug",
+            "url",
+            "username"
+          ],
+          "requiredArguments": [
+            "email",
+            "password",
+            "username"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/users/(?P<id>[\\d]+)",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "context",
+            "id"
+          ],
+          "requiredArguments": []
+        },
+        {
+          "methods": [
+            "PATCH",
+            "POST",
+            "PUT"
+          ],
+          "argumentNames": [
+            "description",
+            "email",
+            "first_name",
+            "id",
+            "last_name",
+            "locale",
+            "meta",
+            "name",
+            "nickname",
+            "password",
+            "roles",
+            "slug",
+            "url",
+            "username"
+          ],
+          "requiredArguments": []
+        },
+        {
+          "methods": [
+            "DELETE"
+          ],
+          "argumentNames": [
+            "force",
+            "id",
+            "reassign"
+          ],
+          "requiredArguments": [
+            "reassign"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/users/(?P<user_id>(?:[\\d]+|me))/application-passwords",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "context"
+          ],
+          "requiredArguments": []
+        },
+        {
+          "methods": [
+            "POST"
+          ],
+          "argumentNames": [
+            "app_id",
+            "name"
+          ],
+          "requiredArguments": [
+            "name"
+          ]
+        },
+        {
+          "methods": [
+            "DELETE"
+          ],
+          "argumentNames": [],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/users/(?P<user_id>(?:[\\d]+|me))/application-passwords/(?P<uuid>[\\w\\-]+)",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "context"
+          ],
+          "requiredArguments": []
+        },
+        {
+          "methods": [
+            "PATCH",
+            "POST",
+            "PUT"
+          ],
+          "argumentNames": [
+            "app_id",
+            "name"
+          ],
+          "requiredArguments": []
+        },
+        {
+          "methods": [
+            "DELETE"
+          ],
+          "argumentNames": [],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/users/(?P<user_id>(?:[\\d]+|me))/application-passwords/introspect",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "context"
+          ],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/users/me",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "context"
+          ],
+          "requiredArguments": []
+        },
+        {
+          "methods": [
+            "PATCH",
+            "POST",
+            "PUT"
+          ],
+          "argumentNames": [
+            "description",
+            "email",
+            "first_name",
+            "last_name",
+            "locale",
+            "meta",
+            "name",
+            "nickname",
+            "password",
+            "roles",
+            "slug",
+            "url",
+            "username"
+          ],
+          "requiredArguments": []
+        },
+        {
+          "methods": [
+            "DELETE"
+          ],
+          "argumentNames": [
+            "force",
+            "reassign"
+          ],
+          "requiredArguments": [
+            "reassign"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/widget-types",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "context"
+          ],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/widget-types/(?P<id>[a-zA-Z0-9_-]+)",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "context",
+            "id"
+          ],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/widget-types/(?P<id>[a-zA-Z0-9_-]+)/encode",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "POST"
+          ],
+          "argumentNames": [
+            "form_data",
+            "id",
+            "instance"
+          ],
+          "requiredArguments": [
+            "id"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/widget-types/(?P<id>[a-zA-Z0-9_-]+)/render",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "POST"
+          ],
+          "argumentNames": [
+            "id",
+            "instance"
+          ],
+          "requiredArguments": [
+            "id"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/widgets",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "context",
+            "sidebar"
+          ],
+          "requiredArguments": []
+        },
+        {
+          "methods": [
+            "POST"
+          ],
+          "argumentNames": [
+            "form_data",
+            "id",
+            "id_base",
+            "instance",
+            "sidebar"
+          ],
+          "requiredArguments": [
+            "sidebar"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/wp/v2/widgets/(?P<id>[\\w\\-]+)",
+      "namespace": "wp/v2",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "context"
+          ],
+          "requiredArguments": []
+        },
+        {
+          "methods": [
+            "PATCH",
+            "POST",
+            "PUT"
+          ],
+          "argumentNames": [
+            "form_data",
+            "id",
+            "id_base",
+            "instance",
+            "sidebar"
+          ],
+          "requiredArguments": []
+        },
+        {
+          "methods": [
+            "DELETE"
+          ],
+          "argumentNames": [
+            "force"
+          ],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/yoast/v1",
+      "namespace": "yoast/v1",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "context",
+            "namespace"
+          ],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/yoast/v1/alerts/dismiss",
+      "namespace": "yoast/v1",
+      "endpoints": [
+        {
+          "methods": [
+            "POST"
+          ],
+          "argumentNames": [
+            "key"
+          ],
+          "requiredArguments": [
+            "key"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/yoast/v1/file_size",
+      "namespace": "yoast/v1",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "url"
+          ],
+          "requiredArguments": [
+            "url"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/yoast/v1/get_head",
+      "namespace": "yoast/v1",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "url"
+          ],
+          "requiredArguments": [
+            "url"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/yoast/v1/indexing/complete",
+      "namespace": "yoast/v1",
+      "endpoints": [
+        {
+          "methods": [
+            "POST"
+          ],
+          "argumentNames": [],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/yoast/v1/indexing/general",
+      "namespace": "yoast/v1",
+      "endpoints": [
+        {
+          "methods": [
+            "POST"
+          ],
+          "argumentNames": [],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/yoast/v1/indexing/indexables-complete",
+      "namespace": "yoast/v1",
+      "endpoints": [
+        {
+          "methods": [
+            "POST"
+          ],
+          "argumentNames": [],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/yoast/v1/indexing/post-type-archives",
+      "namespace": "yoast/v1",
+      "endpoints": [
+        {
+          "methods": [
+            "POST"
+          ],
+          "argumentNames": [],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/yoast/v1/indexing/posts",
+      "namespace": "yoast/v1",
+      "endpoints": [
+        {
+          "methods": [
+            "POST"
+          ],
+          "argumentNames": [],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/yoast/v1/indexing/prepare",
+      "namespace": "yoast/v1",
+      "endpoints": [
+        {
+          "methods": [
+            "POST"
+          ],
+          "argumentNames": [],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/yoast/v1/indexing/terms",
+      "namespace": "yoast/v1",
+      "endpoints": [
+        {
+          "methods": [
+            "POST"
+          ],
+          "argumentNames": [],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/yoast/v1/link-indexing/posts",
+      "namespace": "yoast/v1",
+      "endpoints": [
+        {
+          "methods": [
+            "POST"
+          ],
+          "argumentNames": [],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/yoast/v1/link-indexing/terms",
+      "namespace": "yoast/v1",
+      "endpoints": [
+        {
+          "methods": [
+            "POST"
+          ],
+          "argumentNames": [],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/yoast/v1/semrush/authenticate",
+      "namespace": "yoast/v1",
+      "endpoints": [
+        {
+          "methods": [
+            "POST"
+          ],
+          "argumentNames": [
+            "code"
+          ],
+          "requiredArguments": [
+            "code"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/yoast/v1/semrush/country_code",
+      "namespace": "yoast/v1",
+      "endpoints": [
+        {
+          "methods": [
+            "POST"
+          ],
+          "argumentNames": [
+            "country_code"
+          ],
+          "requiredArguments": [
+            "country_code"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/yoast/v1/semrush/related_keyphrases",
+      "namespace": "yoast/v1",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [
+            "country_code",
+            "keyphrase"
+          ],
+          "requiredArguments": [
+            "country_code",
+            "keyphrase"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/yoast/v1/statistics",
+      "namespace": "yoast/v1",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/yoast/v1/wincher/authenticate",
+      "namespace": "yoast/v1",
+      "endpoints": [
+        {
+          "methods": [
+            "POST"
+          ],
+          "argumentNames": [
+            "code",
+            "websiteId"
+          ],
+          "requiredArguments": [
+            "code",
+            "websiteId"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/yoast/v1/wincher/authorization-url",
+      "namespace": "yoast/v1",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/yoast/v1/wincher/keyphrases",
+      "namespace": "yoast/v1",
+      "endpoints": [
+        {
+          "methods": [
+            "POST"
+          ],
+          "argumentNames": [
+            "keyphrases",
+            "permalink"
+          ],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/yoast/v1/wincher/keyphrases/track",
+      "namespace": "yoast/v1",
+      "endpoints": [
+        {
+          "methods": [
+            "POST"
+          ],
+          "argumentNames": [
+            "keyphrases"
+          ],
+          "requiredArguments": [
+            "keyphrases"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/yoast/v1/wincher/keyphrases/untrack",
+      "namespace": "yoast/v1",
+      "endpoints": [
+        {
+          "methods": [
+            "DELETE"
+          ],
+          "argumentNames": [],
+          "requiredArguments": []
+        }
+      ]
+    },
+    {
+      "path": "/yoast/v1/workouts",
+      "namespace": "yoast/v1",
+      "endpoints": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "argumentNames": [],
+          "requiredArguments": []
+        },
+        {
+          "methods": [
+            "POST"
+          ],
+          "argumentNames": [
+            "configuration"
+          ],
+          "requiredArguments": [
+            "configuration"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/yoast/v1/workouts/enable_tracking",
+      "namespace": "yoast/v1",
+      "endpoints": [
+        {
+          "methods": [
+            "POST"
+          ],
+          "argumentNames": [
+            "tracking"
+          ],
+          "requiredArguments": [
+            "tracking"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/yoast/v1/workouts/site_representation",
+      "namespace": "yoast/v1",
+      "endpoints": [
+        {
+          "methods": [
+            "POST"
+          ],
+          "argumentNames": [
+            "company_logo",
+            "company_logo_id",
+            "company_name",
+            "company_or_person",
+            "company_or_person_user_id",
+            "description",
+            "person_logo",
+            "person_logo_id"
+          ],
+          "requiredArguments": [
+            "company_or_person"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/yoast/v1/workouts/social_profiles",
+      "namespace": "yoast/v1",
+      "endpoints": [
+        {
+          "methods": [
+            "POST"
+          ],
+          "argumentNames": [
+            "facebook_site",
+            "instagram_url",
+            "linkedin_url",
+            "myspace_url",
+            "pinterest_url",
+            "twitter_site",
+            "wikipedia_url",
+            "youtube_url"
+          ],
+          "requiredArguments": []
+        }
+      ]
+    }
+  ]
+}

@@ -6,7 +6,10 @@
     {
       "id": "main-portal",
       "name": "Основной сайт Самарского университета",
-      "baseUrls": ["https://ssau.ru", "https://www.ssau.ru"],
+      "baseUrls": [
+        "https://ssau.ru",
+        "https://www.ssau.ru"
+      ],
       "status": "partially-investigated",
       "routes": [
         {
@@ -14,7 +17,10 @@
           "kind": "rest-api",
           "method": "GET",
           "path": "/api/news/",
-          "contentTypes": ["application/json", "text/xml"],
+          "contentTypes": [
+            "application/json",
+            "text/xml"
+          ],
           "authentication": "not-required-for-verified-public-requests",
           "capabilities": [
             "list-news",
@@ -37,9 +43,13 @@
           "kind": "rss-feed",
           "method": "GET",
           "path": "/rss/",
-          "contentTypes": ["text/xml"],
+          "contentTypes": [
+            "text/xml"
+          ],
           "authentication": "not-required-for-verified-public-request",
-          "capabilities": ["read-recent-news"],
+          "capabilities": [
+            "read-recent-news"
+          ],
           "status": "linked-from-portal-and-verified",
           "documentation": "https://ssau.ru/",
           "details": "docs/apis/public-news.md#rss-feed",
@@ -50,13 +60,22 @@
           "kind": "json-search-endpoint",
           "method": "POST",
           "path": "/rasp/search",
-          "contentTypes": ["application/json"],
+          "contentTypes": [
+            "application/json"
+          ],
           "requestContentType": "application/x-www-form-urlencoded",
           "authentication": "public-session-and-csrf-token-required; no login required in verified request",
           "parameters": [
-            {"name": "text", "in": "form", "type": "string", "required": true}
+            {
+              "name": "text",
+              "in": "form",
+              "type": "string",
+              "required": true
+            }
           ],
-          "capabilities": ["search-schedule-groups"],
+          "capabilities": [
+            "search-schedule-groups"
+          ],
           "status": "found-in-schedule-client-and-verified",
           "details": "docs/apis/schedule-search.md",
           "lastVerified": "2026-10-27"
@@ -66,21 +85,27 @@
     {
       "id": "schedule-page",
       "name": "Публичная страница расписания",
-      "baseUrls": ["https://ssau.ru/rasp"],
+      "baseUrls": [
+        "https://ssau.ru/rasp"
+      ],
       "status": "pages-and-faculty-filter-checked-data-api-not-found-in-capture",
       "routes": []
     },
     {
       "id": "staff-page",
       "name": "Публичный каталог сотрудников",
-      "baseUrls": ["https://www.ssau.ru/staff"],
+      "baseUrls": [
+        "https://www.ssau.ru/staff"
+      ],
       "status": "page-and-filter-click-checked-data-api-not-found-in-capture",
       "routes": []
     },
     {
       "id": "student-cabinet",
       "name": "Личный кабинет",
-      "baseUrls": ["https://lk.ssau.ru"],
+      "baseUrls": [
+        "https://lk.ssau.ru"
+      ],
       "status": "login-page-checked-no-authenticated-operations-captured",
       "routes": [
         {
@@ -88,14 +113,33 @@
           "kind": "authentication-flow",
           "method": "POST",
           "path": "/account/login",
-          "contentTypes": ["multipart/form-data"],
+          "contentTypes": [
+            "multipart/form-data"
+          ],
           "authentication": "creates-session-after-valid-credentials",
           "parameters": [
-            {"name": "login", "in": "form", "type": "string", "required": true},
-            {"name": "password", "in": "form", "type": "string", "required": true},
-            {"name": "dynamic-hidden-fields", "in": "form", "type": "object", "required": false}
+            {
+              "name": "login",
+              "in": "form",
+              "type": "string",
+              "required": true
+            },
+            {
+              "name": "password",
+              "in": "form",
+              "type": "string",
+              "required": true
+            },
+            {
+              "name": "dynamic-hidden-fields",
+              "in": "form",
+              "type": "object",
+              "required": false
+            }
           ],
-          "capabilities": ["create-authenticated-session"],
+          "capabilities": [
+            "create-authenticated-session"
+          ],
           "status": "observed-in-existing-client-not-live-verified",
           "details": "docs/apis/student-timetable-proxy.md#login-flow",
           "lastVerified": null
@@ -105,15 +149,40 @@
           "kind": "protected-json-api",
           "method": "GET",
           "path": "/api/proxy/timetable/get-timetable",
-          "contentTypes": ["application/json"],
+          "contentTypes": [
+            "application/json"
+          ],
           "authentication": "authenticated-student-session-required",
           "parameters": [
-            {"name": "yearId", "in": "query", "type": "integer", "required": true},
-            {"name": "week", "in": "query", "type": "integer", "required": true},
-            {"name": "userType", "in": "query", "type": "string", "required": true, "example": "student"},
-            {"name": "groupId", "in": "query", "type": "string", "required": true}
+            {
+              "name": "yearId",
+              "in": "query",
+              "type": "integer",
+              "required": true
+            },
+            {
+              "name": "week",
+              "in": "query",
+              "type": "integer",
+              "required": true
+            },
+            {
+              "name": "userType",
+              "in": "query",
+              "type": "string",
+              "required": true,
+              "example": "student"
+            },
+            {
+              "name": "groupId",
+              "in": "query",
+              "type": "string",
+              "required": true
+            }
           ],
-          "capabilities": ["get-authenticated-timetable"],
+          "capabilities": [
+            "get-authenticated-timetable"
+          ],
           "status": "observed-in-existing-client-not-live-verified",
           "details": "docs/apis/student-timetable-proxy.md",
           "lastVerified": null
@@ -128,7 +197,10 @@
     {
       "id": "admissions",
       "name": "Сайт приёмной кампании",
-      "baseUrls": ["https://priem.ssau.ru", "https://priemsamara.ru"],
+      "baseUrls": [
+        "https://priem.ssau.ru",
+        "https://priemsamara.ru"
+      ],
       "status": "two-public-ajax-html-routes-verified",
       "routes": [
         {
@@ -136,12 +208,21 @@
           "kind": "ajax-html-fragment",
           "method": "GET",
           "path": "/get_program/{id}",
-          "contentTypes": ["text/html"],
+          "contentTypes": [
+            "text/html"
+          ],
           "authentication": "not-required-for-verified-public-requests",
           "parameters": [
-            {"name": "id", "in": "path", "type": "integer", "required": true}
+            {
+              "name": "id",
+              "in": "path",
+              "type": "integer",
+              "required": true
+            }
           ],
-          "capabilities": ["get-admission-program-details"],
+          "capabilities": [
+            "get-admission-program-details"
+          ],
           "status": "browser-interaction-observed-and-verified",
           "apiAnythingOperation": "priem-samara.getProgramTitle",
           "details": "docs/apis/admissions-fragments.md",
@@ -153,12 +234,21 @@
           "kind": "ajax-html-fragment",
           "method": "GET",
           "path": "/get_fac/{facultyId}/bac",
-          "contentTypes": ["text/html"],
+          "contentTypes": [
+            "text/html"
+          ],
           "authentication": "not-required-for-verified-public-requests",
           "parameters": [
-            {"name": "facultyId", "in": "path", "type": "integer", "required": true}
+            {
+              "name": "facultyId",
+              "in": "path",
+              "type": "integer",
+              "required": true
+            }
           ],
-          "capabilities": ["get-faculty-bachelor-programs"],
+          "capabilities": [
+            "get-faculty-bachelor-programs"
+          ],
           "status": "browser-interaction-observed-and-verified",
           "details": "docs/apis/admissions-fragments.md",
           "lastVerified": "2026-10-27"
@@ -168,13 +258,275 @@
     {
       "id": "repository",
       "name": "Репозиторий университета",
-      "baseUrls": ["https://repo.ssau.ru/jspui/"],
+      "baseUrls": [
+        "https://repo.ssau.ru/jspui/"
+      ],
       "status": "legacy-dspace-jspui-checked-rest-api-not-confirmed",
       "routes": [],
       "observations": [
         "Landing page capture returned HTML; no first-party data API appeared among candidates.",
         "GET /server/api, /server/api/core/communities, /rest, and /rest/communities returned 404.",
         "The repository robots.txt disallows /discover and /simple-search; these paths were not crawled."
+      ]
+    },
+    {
+      "id": "alumni-site",
+      "name": "Сайт выпускников Самарского университета",
+      "baseUrls": [
+        "https://alumni.ssau.ru"
+      ],
+      "status": "wordpress-rest-index-and-public-post-list-verified",
+      "routes": [
+        {
+          "id": "wordpress-rest-index",
+          "kind": "rest-api-route-index",
+          "method": "GET",
+          "path": "/wp-json/",
+          "contentTypes": [
+            "application/json"
+          ],
+          "authentication": "not-required-for-verified-public-request",
+          "capabilities": [
+            "list-registered-route-templates-and-methods"
+          ],
+          "status": "verified",
+          "details": "data/alumni-wp-rest-routes.json",
+          "lastVerified": "2026-10-27",
+          "notes": "Index advertised 185 route templates. The saved derivative contains route/method/argument-name metadata only, not response content."
+        },
+        {
+          "id": "wordpress-public-posts",
+          "kind": "rest-api",
+          "method": "GET",
+          "path": "/wp-json/wp/v2/posts",
+          "contentTypes": [
+            "application/json"
+          ],
+          "authentication": "not-required-for-verified-public-request",
+          "parameters": [
+            {
+              "name": "per_page",
+              "in": "query",
+              "type": "integer",
+              "required": false
+            },
+            {
+              "name": "_fields",
+              "in": "query",
+              "type": "string",
+              "required": false
+            }
+          ],
+          "capabilities": [
+            "list-public-post-metadata"
+          ],
+          "status": "verified",
+          "details": "docs/apis/alumni-wordpress.md",
+          "lastVerified": "2026-10-27",
+          "notes": "Verification used per_page=1 and a field allowlist; no post body was saved. The route index also advertises write methods, which were not invoked."
+        }
+      ],
+      "observations": [
+        "The public WordPress route index includes core and plugin namespaces. Route registration does not prove that every route is public; access checks vary by operation."
+      ]
+    },
+    {
+      "id": "journals",
+      "name": "Электронные журналы Самарского университета",
+      "baseUrls": [
+        "https://journals.ssau.ru"
+      ],
+      "status": "oai-pmh-verified-on-root-and-one-journal",
+      "routes": [
+        {
+          "id": "oai-pmh",
+          "kind": "oai-pmh-metadata-api",
+          "method": "GET",
+          "path": "/index/ru/oai?verb={verb}",
+          "contentTypes": [
+            "text/xml"
+          ],
+          "authentication": "not-required-for-verified-public-requests",
+          "parameters": [
+            {
+              "name": "verb",
+              "in": "query",
+              "type": "string",
+              "required": true,
+              "enum": [
+                "Identify",
+                "ListMetadataFormats",
+                "ListSets"
+              ]
+            }
+          ],
+          "capabilities": [
+            "identify-repository",
+            "list-metadata-formats",
+            "list-sets"
+          ],
+          "status": "verified",
+          "details": "docs/apis/journals-oai-pmh.md",
+          "lastVerified": "2026-10-27",
+          "notes": "The same OAI-PMH verbs were verified at /computeroptics/ru/oai. Additional OAI-PMH verbs and journals remain to be checked."
+        }
+      ]
+    },
+    {
+      "id": "school-site",
+      "name": "Сайт школы Самарского университета",
+      "baseUrls": [
+        "https://school.ssau.ru"
+      ],
+      "status": "form-endpoint-observed-in-client-not-invoked",
+      "routes": [
+        {
+          "id": "school-contact-form",
+          "kind": "form-submission-endpoint",
+          "method": "POST",
+          "path": "/send-form",
+          "contentTypes": [],
+          "authentication": "public-form-with-csrf-token",
+          "capabilities": [
+            "submit-contact-form"
+          ],
+          "status": "observed-in-client-not-called",
+          "details": "docs/coverage.md#системы-кандидаты",
+          "lastVerified": null,
+          "notes": "Endpoint and X-CSRF-Token usage were found in frontend JavaScript. No request was submitted; field schema and content type are unknown."
+        }
+      ]
+    },
+    {
+      "id": "engineering-site",
+      "name": "Инженерный сайт",
+      "baseUrls": [
+        "https://engineering.ssau.ru"
+      ],
+      "status": "tilda-page-checked-no-data-api-confirmed",
+      "routes": [],
+      "observations": [
+        "Страница доступна на Tilda; robots.txt запрещает пути форм и аналитики, они не запрашивались."
+      ]
+    },
+    {
+      "id": "opendoors-site",
+      "name": "Сайт олимпиады Open Doors",
+      "baseUrls": [
+        "https://opendoors.ssau.ru"
+      ],
+      "status": "tilda-page-checked-no-data-api-confirmed",
+      "routes": [],
+      "observations": [
+        "Страница доступна на Tilda; пути форм и аналитики, запрещённые robots.txt, не запрашивались."
+      ]
+    },
+    {
+      "id": "podcasts-site",
+      "name": "Сайт подкастов",
+      "baseUrls": [
+        "https://podcasts.ssau.ru"
+      ],
+      "status": "tilda-page-checked-no-data-api-confirmed",
+      "routes": [],
+      "observations": [
+        "Страница доступна на Tilda; пути форм и аналитики, запрещённые robots.txt, не запрашивались."
+      ]
+    },
+    {
+      "id": "research-site",
+      "name": "Сайт научной деятельности",
+      "baseUrls": [
+        "https://research.ssau.ru"
+      ],
+      "status": "tilda-page-checked-no-data-api-confirmed",
+      "routes": [],
+      "observations": [
+        "Страница доступна на Tilda; пути форм и аналитики, запрещённые robots.txt, не запрашивались."
+      ]
+    },
+    {
+      "id": "welcomebook-site",
+      "name": "Сайт Welcome Book",
+      "baseUrls": [
+        "https://welcomebook.ssau.ru"
+      ],
+      "status": "tilda-page-checked-no-data-api-confirmed",
+      "routes": [],
+      "observations": [
+        "Страница доступна на Tilda; пути, запрещённые robots.txt, не запрашивались."
+      ]
+    },
+    {
+      "id": "profkom-site",
+      "name": "Сайт профкома",
+      "baseUrls": [
+        "https://profkom.ssau.ru"
+      ],
+      "status": "public-page-checked-api-not-confirmed",
+      "routes": [],
+      "observations": [
+        "Joomla-подобная публичная страница просмотрена; отдельный API чтения не подтверждён."
+      ]
+    },
+    {
+      "id": "endowment-site",
+      "name": "Сайт эндаумента",
+      "baseUrls": [
+        "https://endowment.ssau.ru"
+      ],
+      "status": "homepage-and-script-checked-no-api-observed",
+      "routes": [],
+      "observations": [
+        "Главная и её JavaScript просмотрены; отдельные API-вызовы в этих ресурсах не обнаружены."
+      ]
+    },
+    {
+      "id": "bfhouse-site",
+      "name": "Сайт BF House",
+      "baseUrls": [
+        "https://bfhouse.ssau.ru"
+      ],
+      "status": "minimal-response-api-unknown",
+      "routes": [],
+      "observations": [
+        "Хост ответил коротким телом без выявленной страницы/API; причина не установлена."
+      ]
+    },
+    {
+      "id": "mail-site",
+      "name": "Почта университета",
+      "baseUrls": [
+        "https://mail.ssau.ru"
+      ],
+      "status": "login-only-not-investigated",
+      "routes": [],
+      "observations": [
+        "Публичный интерфейс Outlook ведёт к авторизации; API за входом не исследовались."
+      ]
+    },
+    {
+      "id": "ai-site",
+      "name": "Поддомен AI",
+      "baseUrls": [
+        "https://ai.ssau.ru"
+      ],
+      "status": "assigned-domain-404",
+      "routes": [],
+      "observations": [
+        "При проверке ответил 404 «Domain has been assigned»; API не подтверждён."
+      ]
+    },
+    {
+      "id": "3d-site",
+      "name": "3D-поддомен",
+      "baseUrls": [
+        "https://3d.ssau.ru"
+      ],
+      "status": "host-unreachable-api-unknown",
+      "routes": [],
+      "observations": [
+        "Хост не ответил в проверке; статус API неизвестен."
       ]
     }
   ]

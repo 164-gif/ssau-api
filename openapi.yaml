@@ -11,6 +11,77 @@ info:
 servers:
   - url: https://ssau.ru
 paths:
+  /wp-json/:
+    get:
+      servers:
+        - url: https://alumni.ssau.ru
+      operationId: getAlumniWordPressRouteIndex
+      summary: Get the public WordPress REST route index
+      description: >-
+        Returns registered route templates. The index does not imply that every
+        listed operation is anonymously accessible. A sanitized route list is
+        stored in data/alumni-wp-rest-routes.json.
+      responses:
+        "200":
+          description: WordPress REST API route index.
+          content:
+            application/json:
+              schema:
+                type: object
+  /wp-json/wp/v2/posts:
+    get:
+      servers:
+        - url: https://alumni.ssau.ru
+      operationId: listAlumniPublicPosts
+      summary: List public alumni site posts
+      description: >-
+        Public GET verified with per_page=1 and an _fields allowlist. Write
+        methods advertised by WordPress were not invoked.
+      parameters:
+        - name: per_page
+          in: query
+          required: false
+          schema:
+            type: integer
+            minimum: 1
+        - name: _fields
+          in: query
+          required: false
+          description: Comma-separated response field allowlist.
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Public posts.
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+  /index/ru/oai:
+    get:
+      servers:
+        - url: https://journals.ssau.ru
+      operationId: getJournalOaiPmhResponse
+      summary: Request a read-only OAI-PMH operation
+      description: >-
+        Identify, ListMetadataFormats and ListSets were verified on the root
+        journal portal. Other protocol verbs are not yet tested.
+      parameters:
+        - name: verb
+          in: query
+          required: true
+          schema:
+            type: string
+            enum: [Identify, ListMetadataFormats, ListSets]
+      responses:
+        "200":
+          description: OAI-PMH XML response.
+          content:
+            text/xml:
+              schema:
+                type: string
   /get_program/{id}:
     get:
       servers:
