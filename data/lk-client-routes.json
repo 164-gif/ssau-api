@@ -1,0 +1,2796 @@
+{
+  "sourcePage": "https://lk.ssau.ru/",
+  "sourceAssetsCount": 33,
+  "sourceAssetsBytes": 3091544,
+  "retrievedAt": "2026-10-27",
+  "classification": "authenticated-client-route-candidates",
+  "routeCandidateCount": 275,
+  "routesWithNearbyMethodEvidence": 271,
+  "routesWithoutMethodEvidence": 4,
+  "countsByMethod": {
+    "POST": 48,
+    "PUT": 20,
+    "DELETE": 23,
+    "GET": 178,
+    "PATCH": 24
+  },
+  "verifiedSafeRequest": {
+    "method": "GET",
+    "path": "/api/proxy/dictionaries?slug=timetable_lesson_times",
+    "status": 200,
+    "contentType": "application/json",
+    "rootType": "dict",
+    "keys": [
+      "forHigherEducation",
+      "forSpo"
+    ],
+    "valuesStored": false
+  },
+  "limitations": "Extracted API path literals from 33 JavaScript assets served to the authenticated home page. Only route strings with nearby HTTP-client call evidence receive a method. This is not proof every route is enabled for the current account or responds successfully; some modules may require other roles. No response bodies, account data, credentials or cookie values are stored. Mutating routes are listed but were not called.",
+  "routes": [
+    {
+      "path": "/api/account/logout",
+      "methods": [],
+      "methodConfidence": "unresolved-path-literal",
+      "sourceAssets": [
+        "/_next/static/chunks/00dr6wp3t~f2k.js"
+      ]
+    },
+    {
+      "path": "/api/admin/change-user",
+      "methods": [
+        "POST"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/admin/staff-search",
+      "methods": [
+        "POST"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/attendance-journal/control-point",
+      "methods": [
+        "POST"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/attendance-journal/control-point/update-students-progress",
+      "methods": [
+        "POST"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/attendance-journal/control-point/{t}",
+      "methods": [
+        "PUT"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/attendance-journal/control-point/{t}?timetableLessonId={e}",
+      "methods": [
+        "DELETE"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/attendance-journal/duplicate-groups",
+      "methods": [
+        "POST"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/attendance-journal/group-lesson{n}",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/attendance-journal/save-comment",
+      "methods": [
+        "POST"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/attendance-journal/save-comment?timetableLessonId={t}",
+      "methods": [
+        "POST"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/attendance-journal/save-group",
+      "methods": [
+        "POST"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/attendance-journal/save-norm",
+      "methods": [
+        "POST"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/attendance-journal/self-student?groupId={t}",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/attendance-journal/show-hide-student/{t}",
+      "methods": [
+        "POST"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/attendance-journal/update-semester-group-progress",
+      "methods": [
+        "POST"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/attendance-journal/week/{t}/lesson/{e}",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/certificate/filter/receipt-places",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/certificate/student",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/certificate/student/download/{t}",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/certificate/student/initial-data/{t}",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/certificate/student/students",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/certificate/student/types/{t}",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/certificate/student/{e}",
+      "methods": [
+        "POST"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/certificate/student/{t}",
+      "methods": [
+        "DELETE",
+        "GET",
+        "PATCH"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/chats",
+      "methods": [
+        "POST"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/chats/contacts?{e}",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/chats/search?{e}",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/chats/{t_chatId}",
+      "methods": [
+        "POST",
+        "PUT"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/chats/{t_chatId}/message/{t_id}",
+      "methods": [
+        "PUT"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/chats/{t_chatId}/{e}",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/chats/{t_chatId}?limit={t_limit}&offset={t_offset}&{e}",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/chats/{t_id}/detail",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/chats/{t}/archive",
+      "methods": [
+        "PATCH"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/chats/{t}/important",
+      "methods": [
+        "DELETE",
+        "POST"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/chats/{t}/message/{e}",
+      "methods": [
+        "DELETE"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/chats/{t}/message/{e}/important/create",
+      "methods": [
+        "POST"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/chats/{t}/message/{e}/important/delete",
+      "methods": [
+        "DELETE"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/chats/{t}/message/{e}/pinned/create",
+      "methods": [
+        "POST"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/chats/{t}/message/{e}/pinned/delete",
+      "methods": [
+        "DELETE"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/chats/{t}/notification/disable",
+      "methods": [
+        "PATCH"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/chats/{t}/notification/enable",
+      "methods": [
+        "PATCH"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/chats/{t}/read",
+      "methods": [
+        "POST"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/chats/{t}/unarchive",
+      "methods": [
+        "PATCH"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/chats?{e}",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/consent",
+      "methods": [
+        "POST"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/consent/${i?",
+      "methods": [
+        "GET",
+        "POST"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/consent/${t?",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/consent/admin/staff-with-works?departmentId={t}",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/consent/filter/all/{t}",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/consent/filter/departments",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/consent/filter/student-groups",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/consent/work",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/current-progress/student-progress",
+      "methods": [
+        "POST"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/department/permissions",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/department/rates",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/department/staff/{t}",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/department/tree",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/department/{t}",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/dictionaries?slug=control_point_types",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/dictionaries?slug=room_department_assignment_orders",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/dictionaries?slug=timetable_lesson_times",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/dictionaries?slug={t}",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/employer/list/professional-scopes",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/employer/list/regions",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/employer/list/work-experiences",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/employer/list/work-schedules",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/employer/student/vacancy?{d}",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/employer/student/vacancy?{h}",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/events",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/iet-timetable-discipline-link-conference",
+      "methods": [],
+      "methodConfidence": "unresolved-path-literal",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/iet/elective/list/genders",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/iet/elective/list/health-groups",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/iet/elective/list/sport-kinds",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/iet/elective/list/titles",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/iet/elective/student/choice/category/gym",
+      "methods": [
+        "DELETE",
+        "GET",
+        "PUT"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/iet/elective/student/choice/category/gym/confirm",
+      "methods": [
+        "PATCH"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/iet/elective/student/choice/category/language",
+      "methods": [
+        "GET",
+        "PUT"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/iet/elective/student/choice/category/language/confirm",
+      "methods": [
+        "PATCH"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/iet/elective/student/choice/limit-dates",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/iet/elective/student/course/category/gym?page={t}&limit={e}&withSelected=0",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/iet/elective/student/course/category/language?page={t}&limit={e}",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/iet/elective/student/question/category/gym",
+      "methods": [
+        "GET",
+        "PATCH",
+        "POST"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/iet/elective/student/question/info",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/iet_control_points",
+      "methods": [
+        "POST"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/iet_control_points/{e_controlPointId}/flow/{t}/students",
+      "methods": [
+        "PUT"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/iet_control_points/{t}",
+      "methods": [
+        "DELETE",
+        "PUT"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/iet_control_points?disciplineId={t}&lessonTypeId={e}{s}",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/iet_lesson_points",
+      "methods": [
+        "PUT"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/iet_lesson_points/students/{t}/flow/{e}/many",
+      "methods": [
+        "PUT"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/iet_lesson_points?lessonId={t}&week={e}",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/iet_student_meta/{t}/comment",
+      "methods": [
+        "POST"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/iet_student_meta/{t}/hide",
+      "methods": [
+        "POST"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/iet_timetable/{t}",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/iet_total_student_points",
+      "methods": [
+        "POST"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/iet_total_student_points/all_dates?yearId={t}&flowId={e}",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/iet_total_student_points/flows?lessonId={t}",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/iet_total_student_points?yearId={t}&flowId={e}",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/info/all-staff/staff-tab?{i}",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/info/news-list?{o}",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/info/news-page?id={t}",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/institute/groups",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/institute/timetable/rooms_loading?yearId={t}&week={e}&groupId={i}",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/library/bookloan",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/library/recommended",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/military/admin/request/download?{e}",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/military/admin/request/{t}/approve",
+      "methods": [
+        "PATCH"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/military/admin/request/{t}/download",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/military/admin/request/{t}/reset",
+      "methods": [
+        "PATCH"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/military/admin/request/{t}/to-calling",
+      "methods": [
+        "PATCH"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/military/admin/request/{t}/to-done",
+      "methods": [
+        "PATCH"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/military/admin/request/{t}/to-in-work",
+      "methods": [
+        "PATCH"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/military/admin/request/{t}/to-process",
+      "methods": [
+        "PATCH"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/military/admin/request/{t}/to-sent",
+      "methods": [
+        "PATCH"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/military/admin/request?{i}",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/military/filter/courses",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/military/filter/faculties",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/military/filter/request-statuses",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/military/filter/study-levels",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/military/reference/download/{t}",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/military/reference/undownloaded_count",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/military/reference?{i}",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/military/request",
+      "methods": [
+        "POST"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/military/request/actual",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/monetarydebts",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/monetarydebts/{t}",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/monitoring/acting/staff${t?",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/monitoring/departments/department?id={t}",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/monitoring/departments/department?id={t}&year={e}",
+      "methods": [],
+      "methodConfidence": "unresolved-path-literal",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/monitoring/mission/recent${t?",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/monitoring/mission/self?from={i}&to={s}",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/monitoring/mission/{i}?from={s}&to={r}",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/monitoring/salary/email",
+      "methods": [
+        "POST"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/monitoring/sick_leave/recent${t?",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/monitoring/sick_leave/self?from={i}&to={s}",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/monitoring/sick_leave/{i}?from={s}&to={r}",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/monitoring/vacation-leftover/self",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/monitoring/vacation/notify/{t}",
+      "methods": [
+        "PATCH"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/monitoring/vacation/recent${t?",
+      "methods": [
+        "PATCH"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/monitoring/vacation/self?from={s}&to={r}${void0!==i?",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/monitoring/vacation/{i}?from={s}&to={r}",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/personal/about-data${t?",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/personal/groups",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/personal/sports",
+      "methods": [
+        "GET",
+        "PATCH"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/portfolios/filter/additional-education-program-kinds",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/portfolios/filter/countries",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/portfolios/filter/departments",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/portfolios/filter/drive-categories",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/portfolios/filter/education-doc-names",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/portfolios/filter/education-levels",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/portfolios/filter/event-levels",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/portfolios/filter/event-participation-forms",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/portfolios/filter/event-statuses",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/portfolios/filter/finish-years",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/portfolios/filter/language-levels",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/portfolios/filter/languages",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/portfolios/filter/military-ranks",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/portfolios/filter/participation-statuses",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/portfolios/filter/practice-kinds",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/portfolios/filter/practice-types",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/portfolios/filter/prizewinning-places",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/portfolios/filter/protection-document-types",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/portfolios/filter/sport-ranks",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/portfolios/portfolio/{t}",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/portfolios/self",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/portfolios/{t}/to-pias-contest",
+      "methods": [
+        "PATCH"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/publ/delete",
+      "methods": [
+        "POST"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/publ/edit/{t}?admin=false",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/publ/edit?admin=false",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/publ/form16_years",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/publ/get_publ_info/{t}",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/publ/journal_search",
+      "methods": [
+        "POST"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/publ/save",
+      "methods": [
+        "POST"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/publ/save/{t_id}",
+      "methods": [
+        "POST"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/publ/science?without-spec=false",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/publ/staff_search",
+      "methods": [
+        "POST"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/resource-consumption-accounting/common/cost/{t}",
+      "methods": [
+        "DELETE",
+        "PUT"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/resource-consumption-accounting/common/rooms?{r}",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/resource-consumption-accounting/common/rooms_assignments/{t_id}",
+      "methods": [
+        "PUT"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/resource-consumption-accounting/common/rooms_assignments/{t}",
+      "methods": [
+        "DELETE"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/resource-consumption-accounting/common/{r}/rooms_assignments?{o}",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/resource-consumption-accounting/common/{t_counterId}/cost",
+      "methods": [
+        "POST"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/resource-consumption-accounting/common/{t_meterId}/cost?{s}",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/resource-consumption-accounting/common/{t_meterId}/rooms_assignments",
+      "methods": [
+        "POST"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/resource-consumption-accounting/contract",
+      "methods": [
+        "POST"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/resource-consumption-accounting/contract/{t}",
+      "methods": [
+        "DELETE",
+        "PUT"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/resource-consumption-accounting/contract?{a}",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/resource-consumption-accounting/electricity/rooms?{r}",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/resource-consumption-accounting/electricity/rooms_assignments/{t_id}",
+      "methods": [
+        "PUT"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/resource-consumption-accounting/electricity/rooms_assignments/{t}",
+      "methods": [
+        "DELETE"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/resource-consumption-accounting/electricity/tariff-history/move",
+      "methods": [
+        "POST"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/resource-consumption-accounting/electricity/values/{t}",
+      "methods": [
+        "DELETE",
+        "PUT"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/resource-consumption-accounting/electricity/{r}/rooms_assignments?{o}",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/resource-consumption-accounting/electricity/{t_counterId}/values",
+      "methods": [
+        "POST"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/resource-consumption-accounting/electricity/{t_meterId}/rooms_assignments",
+      "methods": [
+        "POST"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/resource-consumption-accounting/electricity/{t_meterId}/values?{s}",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/resource-consumption-accounting/tariff",
+      "methods": [
+        "POST"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/resource-consumption-accounting/tariff/{t}",
+      "methods": [
+        "DELETE",
+        "PUT"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/resource-consumption-accounting/tariff?{a}",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/resume/student",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/resume/template",
+      "methods": [
+        "DELETE"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/resume/template/download",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/resume/template/get",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/resume/template/upload",
+      "methods": [
+        "POST"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/resume/{t}",
+      "methods": [
+        "DELETE"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/resume/{t}/pdf",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/room-reservation",
+      "methods": [
+        "POST"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/room-reservation/admin/{t}/approve",
+      "methods": [
+        "PATCH"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/room-reservation/admin/{t}/cancel",
+      "methods": [
+        "PATCH"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/room-reservation/admin/{t}/conflicts",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/room-reservation/admin/{t}/reset",
+      "methods": [
+        "PATCH"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/room-reservation/admin?{i}",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/room-reservation/buildings",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/room-reservation/free-rooms?{i}",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/room-reservation/{t}",
+      "methods": [
+        "DELETE"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/room-reservation/{t}/pdf",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/room-reservation/{t}/timetable-preview",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/room-reservation?{e}",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/settings/change-feedback",
+      "methods": [
+        "POST"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/settings/current-settings",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/settings/profile/vkontakte",
+      "methods": [
+        "DELETE"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/staff?{i}",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/statements/aspirant/detail/{t}",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/statements/aspirant/disciplines?term={t}",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/statements/aspirant/examiners?term={t}",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/statements/aspirant/faculties",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/statements/aspirant/groups?term={t}",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/statements/aspirant?{a}",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/statements/institute/detail/{t}",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/statements/institute/disciplines?term={t}",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/statements/institute/examiners?term={t}",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/statements/institute/faculties",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/statements/institute/groups?term={t}",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/statements/institute?{a}",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/statements/student/groups",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/statements/student/types",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/statements/student/years",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/statements/student{n}",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/statements/teacher/groups",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/statements/teacher/results/{t}",
+      "methods": [
+        "PATCH"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/statements/teacher/status/{t}",
+      "methods": [
+        "PATCH"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/statements/teacher/types",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/statements/teacher/years",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/statements/teacher/{t}",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/statements/teacher?{a}",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/static-page?url=${t.replace(/~/g,",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/study/certification{e}",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/study/scholarship",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/study/working-plan",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/study/working-plan-competencies",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/tangibles/dictionaries/room_department_assignment_orders",
+      "methods": [
+        "POST"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/tangibles/dictionaries/room_department_assignment_orders/{t_id}",
+      "methods": [
+        "PUT"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/tangibles/dictionaries/room_department_assignment_orders/{t}",
+      "methods": [
+        "DELETE"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/tangibles/dictionaries/room_department_assignment_orders/{t}/file",
+      "methods": [
+        "DELETE",
+        "GET",
+        "POST"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/tangibles/inventory?{o}",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/tangibles/rooms",
+      "methods": [
+        "POST"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/tangibles/rooms/department-assign/{t}",
+      "methods": [
+        "DELETE",
+        "PUT"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/tangibles/rooms/totalCount",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/tangibles/rooms/xlsx?{e}",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/tangibles/rooms/{t}",
+      "methods": [
+        "DELETE",
+        "GET",
+        "PUT"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/tangibles/rooms/{t}/department-assign",
+      "methods": [
+        "GET",
+        "POST"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/tangibles/rooms/{t}/restore",
+      "methods": [
+        "PUT"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/tangibles/rooms?{i}",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/timetable-discipline-link-conference",
+      "methods": [],
+      "methodConfidence": "unresolved-path-literal",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/timetable/building/{e}/week/{i}/year/{s}/rooms?{r}",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/timetable/directories",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/timetable/extra-activities/{t}",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/timetable/get-timetable?yearId={t}&week={e}${i?",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/timetable/lessons/{t}",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/timetable/rooms/loading/export?{e}",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/widget/recent-publs?id={t}",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/widget/{t}?id={e}",
+      "methods": [
+        "GET"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/{i}/{e}",
+      "methods": [
+        "DELETE"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/{r}",
+      "methods": [
+        "POST"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    },
+    {
+      "path": "/api/proxy/{r}/{s}",
+      "methods": [
+        "PUT"
+      ],
+      "methodConfidence": "nearby-client-call",
+      "sourceAssets": [
+        "/_next/static/chunks/120jwb5p21ujj.js"
+      ]
+    }
+  ]
+}

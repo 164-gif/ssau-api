@@ -106,7 +106,7 @@
       "baseUrls": [
         "https://lk.ssau.ru"
       ],
-      "status": "login-page-checked-no-authenticated-operations-captured",
+      "status": "login-live-verified; one-safe-get-verified; 275-client-api-path-candidates-extracted",
       "routes": [
         {
           "id": "account-login",
@@ -140,9 +140,9 @@
           "capabilities": [
             "create-authenticated-session"
           ],
-          "status": "observed-in-existing-client-not-live-verified",
+          "status": "live-login-verified",
           "details": "docs/apis/student-timetable-proxy.md#login-flow",
-          "lastVerified": null
+          "lastVerified": "2026-10-27"
         },
         {
           "id": "authenticated-timetable",
@@ -183,15 +183,44 @@
           "capabilities": [
             "get-authenticated-timetable"
           ],
-          "status": "observed-in-existing-client-not-live-verified",
+          "status": "found-in-client-not-live-called",
           "details": "docs/apis/student-timetable-proxy.md",
           "lastVerified": null
+        },
+        {
+          "id": "student-timetable-dictionary",
+          "kind": "protected-json-api",
+          "method": "GET",
+          "path": "/api/proxy/dictionaries",
+          "contentTypes": ["application/json"],
+          "authentication": "authenticated-session-required",
+          "parameters": [
+            {"name": "slug", "in": "query", "type": "string", "required": true, "verifiedValue": "timetable_lesson_times"}
+          ],
+          "capabilities": ["get-timetable-dictionary"],
+          "status": "live-verified-200",
+          "details": "docs/apis/student-cabinet-client-api.md#проверенный-запрос-api",
+          "lastVerified": "2026-10-27",
+          "notes": "Response was a JSON object with keys forHigherEducation and forSpo; dictionary values were not retained."
+        },
+        {
+          "id": "authenticated-client-route-map",
+          "kind": "authenticated-client-api-route-candidates",
+          "method": "multiple",
+          "path": "/api/{clientRoute}",
+          "authentication": "login-verified; route-specific access-varies-and-is-not-verified",
+          "capabilities": ["see data/lk-client-routes.json for 275 client-declared API path candidates"],
+          "status": "extracted-from-33-js-assets; 271-paths-have-nearby-http-method-evidence",
+          "details": "docs/apis/student-cabinet-client-api.md",
+          "lastVerified": "2026-10-27",
+          "notes": "The route list contains method and path candidates only. No personal API responses or mutating methods were requested."
         }
       ],
       "observations": [
         "Root redirects to /account/login?returnUrl=%252F.",
         "Unauthenticated page load issued Next.js RSC navigation requests with the _rsc query parameter.",
-        "Login POST and protected timetable GET are observed in the existing client; no credentials or authenticated request were used in this review."
+        "Login was completed with the account already configured for the local bot; secret values were not printed or stored in this repository.",
+        "One authenticated GET to the timetable dictionary returned 200 application/json. Other protected API candidates were not individually called."
       ]
     },
     {
