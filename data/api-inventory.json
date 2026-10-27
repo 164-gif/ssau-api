@@ -195,6 +195,31 @@
       ]
     },
     {
+      "id": "cabinet-service",
+      "name": "Личный кабинет Самарского университета",
+      "baseUrls": ["https://cabinet.ssau.ru"],
+      "status": "client-route-candidates-extracted; unauthenticated-api-probes-return-401",
+      "routes": [
+        {
+          "id": "cabinet-api-client-route-catalog",
+          "kind": "client-route-candidate-catalog",
+          "method": "multiple",
+          "path": "/api/{clientRoute}",
+          "authentication": "required-for-three-verified-get-probes; exact-auth-mechanism-not-verified",
+          "capabilities": ["see data/cabinet-client-routes.json for client-declared route candidates"],
+          "status": "293-route-candidates-extracted-from-public-client-bundle-not-individually-verified",
+          "details": "docs/apis/cabinet-service.md",
+          "lastVerified": "2026-10-27",
+          "notes": "The bundle configures Axios baseURL as /api or / depending on a runtime condition. GET /api/timetable/directories/groups, /api/timetable/directories, and /api/monitoring/student-contingent/filter/groups returned 401 without credentials."
+        }
+      ],
+      "observations": [
+        "The root redirects to /login. Public application bundle declares route candidates across timetable, study plans, monitoring, publication records, employer tools, elective courses, chats, and other modules.",
+        "The JS client sets withCredentials=true. No authenticated request was made and no response containing student, staff, chat, or plan data was accessed.",
+        "robots.txt disallows /timetable/printing-form/; that path was not requested."
+      ]
+    },
+    {
       "id": "admissions",
       "name": "Сайт приёмной кампании",
       "baseUrls": [

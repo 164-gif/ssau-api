@@ -1,0 +1,1189 @@
+{
+  "source": "https://cabinet.ssau.ru/asset/js/app-legacy.8b3e44fe.js",
+  "retrievedAt": "2026-10-27",
+  "classification": "client-route-candidates",
+  "basePathObservation": "Axios baseURL is configured conditionally as /api or /; unauthenticated GET probes under /api returned 401.",
+  "routeCount": 293,
+  "countsByMethod": {
+    "DELETE": 29,
+    "GET": 179,
+    "PATCH": 38,
+    "POST": 34,
+    "PUT": 13
+  },
+  "limitations": "Extracted from literal first arguments of HTTP-client-looking method calls in the public application bundle. Candidate routes are not individually verified; dynamic JavaScript expressions are rendered as placeholders. No request payloads, response bodies, credentials, or personal data are included.",
+  "routes": [
+    {
+      "method": "DELETE",
+      "path": "/chats/"
+    },
+    {
+      "method": "DELETE",
+      "path": "/chats/{chatId}/message/{id}/important/delete"
+    },
+    {
+      "method": "DELETE",
+      "path": "/chats/{chatId}/message/{id}/pinned/delete"
+    },
+    {
+      "method": "DELETE",
+      "path": "/chats/{chatId}/message/{messageId}"
+    },
+    {
+      "method": "DELETE",
+      "path": "/chats/{e}/important"
+    },
+    {
+      "method": "DELETE",
+      "path": "/employer/administration/news/"
+    },
+    {
+      "method": "DELETE",
+      "path": "/iet/admin_discipline/"
+    },
+    {
+      "method": "DELETE",
+      "path": "/iet/admin_discipline_card/"
+    },
+    {
+      "method": "DELETE",
+      "path": "/iet/admin_route_without_access_group/"
+    },
+    {
+      "method": "DELETE",
+      "path": "/iet/admin_track/"
+    },
+    {
+      "method": "DELETE",
+      "path": "/iet/admin_without_access_group/"
+    },
+    {
+      "method": "DELETE",
+      "path": "/iet/discipline_block/"
+    },
+    {
+      "method": "DELETE",
+      "path": "/iet/discipline_year/"
+    },
+    {
+      "method": "DELETE",
+      "path": "/iet/elective/admin/choice/category/{t}/student/{a}"
+    },
+    {
+      "method": "DELETE",
+      "path": "/iet/elective/admin/course/"
+    },
+    {
+      "method": "DELETE",
+      "path": "/iet/elective/admin/direction/"
+    },
+    {
+      "method": "DELETE",
+      "path": "/iet/elective/{t}/card/{a}"
+    },
+    {
+      "method": "DELETE",
+      "path": "/iet/semester/"
+    },
+    {
+      "method": "DELETE",
+      "path": "/iet_timetable/"
+    },
+    {
+      "method": "DELETE",
+      "path": "/individual-plan-work/"
+    },
+    {
+      "method": "DELETE",
+      "path": "/individual-plan/"
+    },
+    {
+      "method": "DELETE",
+      "path": "/monitoring/patent/subjectMatter/"
+    },
+    {
+      "method": "DELETE",
+      "path": "/monitoring/patent/type/"
+    },
+    {
+      "method": "DELETE",
+      "path": "/timetable/directories/semesters/"
+    },
+    {
+      "method": "DELETE",
+      "path": "/timetable/extra-activities/"
+    },
+    {
+      "method": "DELETE",
+      "path": "/timetable/lessons/"
+    },
+    {
+      "method": "DELETE",
+      "path": "/timetable/unified/building/dictionary/"
+    },
+    {
+      "method": "DELETE",
+      "path": "iet/admin_discipline_card/{cardId}/file/{fileId}"
+    },
+    {
+      "method": "DELETE",
+      "path": "iet/discipline_card/{cardId}/file/{fileId}"
+    },
+    {
+      "method": "GET",
+      "path": "/bypass-sheets/filter/statuses"
+    },
+    {
+      "method": "GET",
+      "path": "/bypass-sheets/filter/types"
+    },
+    {
+      "method": "GET",
+      "path": "/chats"
+    },
+    {
+      "method": "GET",
+      "path": "/chats/contacts"
+    },
+    {
+      "method": "GET",
+      "path": "/chats/search"
+    },
+    {
+      "method": "GET",
+      "path": "/chats/{e}/pinned"
+    },
+    {
+      "method": "GET",
+      "path": "/chats/{e}{n}"
+    },
+    {
+      "method": "GET",
+      "path": "/dictionaries"
+    },
+    {
+      "method": "GET",
+      "path": "/dictionaries-for-benefit-form"
+    },
+    {
+      "method": "GET",
+      "path": "/discipline/list"
+    },
+    {
+      "method": "GET",
+      "path": "/employer/administration/news"
+    },
+    {
+      "method": "GET",
+      "path": "/employer/administration/organization"
+    },
+    {
+      "method": "GET",
+      "path": "/employer/administration/organization-registration"
+    },
+    {
+      "method": "GET",
+      "path": "/employer/administration/vacancy"
+    },
+    {
+      "method": "GET",
+      "path": "/employer/administration/vacancy/"
+    },
+    {
+      "method": "GET",
+      "path": "/employer/administration/vacancy/response"
+    },
+    {
+      "method": "GET",
+      "path": "/employer/list/organizations/{n}/{s}{t}"
+    },
+    {
+      "method": "GET",
+      "path": "/employer/list/professional-scopes"
+    },
+    {
+      "method": "GET",
+      "path": "/employer/list/regions"
+    },
+    {
+      "method": "GET",
+      "path": "/employer/list/vacancy-access-courses"
+    },
+    {
+      "method": "GET",
+      "path": "/employer/list/vacancy-access-directions"
+    },
+    {
+      "method": "GET",
+      "path": "/employer/list/vacancy-access-faculties"
+    },
+    {
+      "method": "GET",
+      "path": "/employer/list/vacancy-access-study-forms"
+    },
+    {
+      "method": "GET",
+      "path": "/employer/list/vacancy-access-study-levels"
+    },
+    {
+      "method": "GET",
+      "path": "/employer/list/vacancy-statuses"
+    },
+    {
+      "method": "GET",
+      "path": "/employer/list/vacancy-types"
+    },
+    {
+      "method": "GET",
+      "path": "/employer/list/work-experiences"
+    },
+    {
+      "method": "GET",
+      "path": "/employer/list/work-schedules"
+    },
+    {
+      "method": "GET",
+      "path": "/graduate-poll/citizenships"
+    },
+    {
+      "method": "GET",
+      "path": "/graduate-poll/countries"
+    },
+    {
+      "method": "GET",
+      "path": "/graduate-poll/english-levels"
+    },
+    {
+      "method": "GET",
+      "path": "/graduate-poll/further-employments"
+    },
+    {
+      "method": "GET",
+      "path": "/graduate-poll/other-languages"
+    },
+    {
+      "method": "GET",
+      "path": "/graduate-poll/profiles"
+    },
+    {
+      "method": "GET",
+      "path": "/graduate-poll/specialities"
+    },
+    {
+      "method": "GET",
+      "path": "/graduate-poll/study-levels"
+    },
+    {
+      "method": "GET",
+      "path": "/graduate-poll/study-places"
+    },
+    {
+      "method": "GET",
+      "path": "/graduate-poll/training-kinds"
+    },
+    {
+      "method": "GET",
+      "path": "/graduate-poll/work-searches"
+    },
+    {
+      "method": "GET",
+      "path": "/iet/admin_discipline"
+    },
+    {
+      "method": "GET",
+      "path": "/iet/admin_discipline/"
+    },
+    {
+      "method": "GET",
+      "path": "/iet/admin_discipline_card/"
+    },
+    {
+      "method": "GET",
+      "path": "/iet/admin_route_without_access_group"
+    },
+    {
+      "method": "GET",
+      "path": "/iet/admin_statement"
+    },
+    {
+      "method": "GET",
+      "path": "/iet/admin_statement/filter/groups"
+    },
+    {
+      "method": "GET",
+      "path": "/iet/admin_statement/filter/years"
+    },
+    {
+      "method": "GET",
+      "path": "/iet/admin_track"
+    },
+    {
+      "method": "GET",
+      "path": "/iet/admin_track/"
+    },
+    {
+      "method": "GET",
+      "path": "/iet/admin_without_access_group"
+    },
+    {
+      "method": "GET",
+      "path": "/iet/admin_without_access_group/groups"
+    },
+    {
+      "method": "GET",
+      "path": "/iet/discipline"
+    },
+    {
+      "method": "GET",
+      "path": "/iet/discipline/courses"
+    },
+    {
+      "method": "GET",
+      "path": "/iet/discipline/studyForms"
+    },
+    {
+      "method": "GET",
+      "path": "/iet/discipline/studyLevels"
+    },
+    {
+      "method": "GET",
+      "path": "/iet/discipline_block"
+    },
+    {
+      "method": "GET",
+      "path": "/iet/discipline_block/"
+    },
+    {
+      "method": "GET",
+      "path": "/iet/discipline_block/list"
+    },
+    {
+      "method": "GET",
+      "path": "/iet/discipline_card"
+    },
+    {
+      "method": "GET",
+      "path": "/iet/discipline_card/"
+    },
+    {
+      "method": "GET",
+      "path": "/iet/discipline_card_status"
+    },
+    {
+      "method": "GET",
+      "path": "/iet/discipline_year/"
+    },
+    {
+      "method": "GET",
+      "path": "/iet/discipline_year/list"
+    },
+    {
+      "method": "GET",
+      "path": "/iet/elective/admin/choice/category/"
+    },
+    {
+      "method": "GET",
+      "path": "/iet/elective/admin/choice/category/gym/student/"
+    },
+    {
+      "method": "GET",
+      "path": "/iet/elective/admin/choice/speciality-group"
+    },
+    {
+      "method": "GET",
+      "path": "/iet/elective/admin/direction"
+    },
+    {
+      "method": "GET",
+      "path": "/iet/elective/list/card-statuses"
+    },
+    {
+      "method": "GET",
+      "path": "/iet/elective/list/categories"
+    },
+    {
+      "method": "GET",
+      "path": "/iet/elective/list/choice-statuses"
+    },
+    {
+      "method": "GET",
+      "path": "/iet/elective/list/course-genders"
+    },
+    {
+      "method": "GET",
+      "path": "/iet/elective/list/departments"
+    },
+    {
+      "method": "GET",
+      "path": "/iet/elective/list/genders"
+    },
+    {
+      "method": "GET",
+      "path": "/iet/elective/list/groups"
+    },
+    {
+      "method": "GET",
+      "path": "/iet/elective/list/health-groups"
+    },
+    {
+      "method": "GET",
+      "path": "/iet/elective/list/institutes"
+    },
+    {
+      "method": "GET",
+      "path": "/iet/elective/list/staffs"
+    },
+    {
+      "method": "GET",
+      "path": "/iet/elective/list/teachers"
+    },
+    {
+      "method": "GET",
+      "path": "/iet/elective/list/years"
+    },
+    {
+      "method": "GET",
+      "path": "/iet/elective/{t}/card/{a}"
+    },
+    {
+      "method": "GET",
+      "path": "/iet/elective/{t}/course/{a}"
+    },
+    {
+      "method": "GET",
+      "path": "/iet/moderation_discipline"
+    },
+    {
+      "method": "GET",
+      "path": "/iet/moderation_discipline/"
+    },
+    {
+      "method": "GET",
+      "path": "/iet/moderation_discipline_card"
+    },
+    {
+      "method": "GET",
+      "path": "/iet/moderation_discipline_card/"
+    },
+    {
+      "method": "GET",
+      "path": "/iet/moderation_student_choice"
+    },
+    {
+      "method": "GET",
+      "path": "/iet/semester/"
+    },
+    {
+      "method": "GET",
+      "path": "/iet/semester/list"
+    },
+    {
+      "method": "GET",
+      "path": "/iet/semester_type/list"
+    },
+    {
+      "method": "GET",
+      "path": "/iet/statement/statuses"
+    },
+    {
+      "method": "GET",
+      "path": "/iet/student/selected"
+    },
+    {
+      "method": "GET",
+      "path": "/iet/student_discipline"
+    },
+    {
+      "method": "GET",
+      "path": "/iet/student_discipline_card"
+    },
+    {
+      "method": "GET",
+      "path": "/iet/student_discipline_card/"
+    },
+    {
+      "method": "GET",
+      "path": "/iet/student_route/{t}"
+    },
+    {
+      "method": "GET",
+      "path": "/iet/student_statement/discipline/"
+    },
+    {
+      "method": "GET",
+      "path": "/iet/student_statement/list/"
+    },
+    {
+      "method": "GET",
+      "path": "/iet/student_statement/route/{t}"
+    },
+    {
+      "method": "GET",
+      "path": "/iet/student_track"
+    },
+    {
+      "method": "GET",
+      "path": "/iet/student_track/"
+    },
+    {
+      "method": "GET",
+      "path": "/iet/teacher_discipline"
+    },
+    {
+      "method": "GET",
+      "path": "/iet/teacher_discipline/"
+    },
+    {
+      "method": "GET",
+      "path": "/iet/track_status"
+    },
+    {
+      "method": "GET",
+      "path": "/iet_timetable"
+    },
+    {
+      "method": "GET",
+      "path": "/iet_timetable/directories"
+    },
+    {
+      "method": "GET",
+      "path": "/individual-plan/admin/"
+    },
+    {
+      "method": "GET",
+      "path": "/individual-plan/admin/confirm-statuses"
+    },
+    {
+      "method": "GET",
+      "path": "/individual-plan/admin/department"
+    },
+    {
+      "method": "GET",
+      "path": "/individual-plan/admin/department/"
+    },
+    {
+      "method": "GET",
+      "path": "/individual-plan/individual-plan-statuses"
+    },
+    {
+      "method": "GET",
+      "path": "/individual-plan/individual-plan-work-statuses"
+    },
+    {
+      "method": "GET",
+      "path": "/individual-plan/individual-plan-work-types"
+    },
+    {
+      "method": "GET",
+      "path": "/individual-plan/staff"
+    },
+    {
+      "method": "GET",
+      "path": "/individual-plan/staff/"
+    },
+    {
+      "method": "GET",
+      "path": "/individual-plan/staff/{t}/works"
+    },
+    {
+      "method": "GET",
+      "path": "/institute/payed_education/filters"
+    },
+    {
+      "method": "GET",
+      "path": "/monitoring/exhibit/filter/author/ex-types"
+    },
+    {
+      "method": "GET",
+      "path": "/monitoring/exhibit/filter/author/names"
+    },
+    {
+      "method": "GET",
+      "path": "/monitoring/exhibit/filter/departments"
+    },
+    {
+      "method": "GET",
+      "path": "/monitoring/exhibit/filter/types"
+    },
+    {
+      "method": "GET",
+      "path": "/monitoring/exhibit/filter/years"
+    },
+    {
+      "method": "GET",
+      "path": "/monitoring/exhibition/filter/author/ex-types"
+    },
+    {
+      "method": "GET",
+      "path": "/monitoring/exhibition/filter/author/names"
+    },
+    {
+      "method": "GET",
+      "path": "/monitoring/exhibition/filter/author/types"
+    },
+    {
+      "method": "GET",
+      "path": "/monitoring/exhibition/filter/awards"
+    },
+    {
+      "method": "GET",
+      "path": "/monitoring/exhibition/filter/departments"
+    },
+    {
+      "method": "GET",
+      "path": "/monitoring/exhibition/filter/exhibits"
+    },
+    {
+      "method": "GET",
+      "path": "/monitoring/exhibition/filter/forms"
+    },
+    {
+      "method": "GET",
+      "path": "/monitoring/exhibition/filter/levels"
+    },
+    {
+      "method": "GET",
+      "path": "/monitoring/staff-contingent/filter/dep"
+    },
+    {
+      "method": "GET",
+      "path": "/monitoring/staff-contingent/filter/ed-degree"
+    },
+    {
+      "method": "GET",
+      "path": "/monitoring/staff-contingent/filter/ed-status"
+    },
+    {
+      "method": "GET",
+      "path": "/monitoring/staff-contingent/filter/gender"
+    },
+    {
+      "method": "GET",
+      "path": "/monitoring/staff-contingent/filter/internship-type"
+    },
+    {
+      "method": "GET",
+      "path": "/monitoring/staff-contingent/filter/officer"
+    },
+    {
+      "method": "GET",
+      "path": "/monitoring/staff-contingent/filter/publication-type"
+    },
+    {
+      "method": "GET",
+      "path": "/monitoring/staff-contingent/filter/publication-year"
+    },
+    {
+      "method": "GET",
+      "path": "/monitoring/staff-contingent/filter/spec"
+    },
+    {
+      "method": "GET",
+      "path": "/monitoring/staff-contingent/filter/training-type"
+    },
+    {
+      "method": "GET",
+      "path": "/monitoring/student-contingent/filter/citizenships"
+    },
+    {
+      "method": "GET",
+      "path": "/monitoring/student-contingent/filter/courses"
+    },
+    {
+      "method": "GET",
+      "path": "/monitoring/student-contingent/filter/faculties"
+    },
+    {
+      "method": "GET",
+      "path": "/monitoring/student-contingent/filter/genders"
+    },
+    {
+      "method": "GET",
+      "path": "/monitoring/student-contingent/filter/groups"
+    },
+    {
+      "method": "GET",
+      "path": "/monitoring/student-contingent/filter/specialities"
+    },
+    {
+      "method": "GET",
+      "path": "/monitoring/student-contingent/filter/study-forms"
+    },
+    {
+      "method": "GET",
+      "path": "/monitoring/student-contingent/filter/study-levels"
+    },
+    {
+      "method": "GET",
+      "path": "/monitoring/vacation/self"
+    },
+    {
+      "method": "GET",
+      "path": "/publ/journal/filter/levels"
+    },
+    {
+      "method": "GET",
+      "path": "/publ/journal/filter/source-types"
+    },
+    {
+      "method": "GET",
+      "path": "/publ/journal/filter/statuses"
+    },
+    {
+      "method": "GET",
+      "path": "/student-contest/filter/awards"
+    },
+    {
+      "method": "GET",
+      "path": "/student-contest/filter/fin-sources"
+    },
+    {
+      "method": "GET",
+      "path": "/student-contest/filter/levels"
+    },
+    {
+      "method": "GET",
+      "path": "/student-contest/filter/specializations"
+    },
+    {
+      "method": "GET",
+      "path": "/student-contest/filter/sport-titles"
+    },
+    {
+      "method": "GET",
+      "path": "/student-contest/filter/work-types"
+    },
+    {
+      "method": "GET",
+      "path": "/study-load/hour-names"
+    },
+    {
+      "method": "GET",
+      "path": "/study-load/staff"
+    },
+    {
+      "method": "GET",
+      "path": "/study-load/staff/"
+    },
+    {
+      "method": "GET",
+      "path": "/tangibles/study-room/filter/buildings"
+    },
+    {
+      "method": "GET",
+      "path": "/tangibles/study-room/filter/departments"
+    },
+    {
+      "method": "GET",
+      "path": "/tangibles/study-room/filter/floors"
+    },
+    {
+      "method": "GET",
+      "path": "/timetable/building/{buildingId}/week/{week}/year/{yearId}/rooms"
+    },
+    {
+      "method": "GET",
+      "path": "/timetable/departments/{departmentId}/lessons"
+    },
+    {
+      "method": "GET",
+      "path": "/timetable/directories"
+    },
+    {
+      "method": "GET",
+      "path": "/timetable/directories/departments"
+    },
+    {
+      "method": "GET",
+      "path": "/timetable/directories/extra-activities"
+    },
+    {
+      "method": "GET",
+      "path": "/timetable/directories/groups"
+    },
+    {
+      "method": "GET",
+      "path": "/timetable/directories/groups-orders"
+    },
+    {
+      "method": "GET",
+      "path": "/timetable/discipline/departments"
+    },
+    {
+      "method": "GET",
+      "path": "/timetable/dsl/lessons?groupsId={e}&sessionId={id}"
+    },
+    {
+      "method": "GET",
+      "path": "/timetable/dsl/sessions"
+    },
+    {
+      "method": "GET",
+      "path": "/timetable/extra-activities"
+    },
+    {
+      "method": "GET",
+      "path": "/timetable/lessons/groups"
+    },
+    {
+      "method": "GET",
+      "path": "/timetable/lessons/groups?groupsId={e}&semesterId={t}"
+    },
+    {
+      "method": "GET",
+      "path": "/timetable/session/meetings?groupsId={e}&semesterId={id}"
+    },
+    {
+      "method": "GET",
+      "path": "/timetable/unified/building/dictionary"
+    },
+    {
+      "method": "GET",
+      "path": "/timetable/unified/room-tag/dictionary"
+    },
+    {
+      "method": "GET",
+      "path": "/timetable/unified/room/dictionary"
+    },
+    {
+      "method": "PATCH",
+      "path": "/chats/{e}/archive"
+    },
+    {
+      "method": "PATCH",
+      "path": "/chats/{e}/notification/disable"
+    },
+    {
+      "method": "PATCH",
+      "path": "/chats/{e}/notification/enable"
+    },
+    {
+      "method": "PATCH",
+      "path": "/chats/{e}/unarchive"
+    },
+    {
+      "method": "PATCH",
+      "path": "/employer/administration/organization-registration/{t}/confirm"
+    },
+    {
+      "method": "PATCH",
+      "path": "/employer/administration/organization-registration/{t}/reject"
+    },
+    {
+      "method": "PATCH",
+      "path": "/employer/administration/organization-registration/{t}/resend-confirm"
+    },
+    {
+      "method": "PATCH",
+      "path": "/employer/administration/organization/{id}/{e}"
+    },
+    {
+      "method": "PATCH",
+      "path": "/employer/administration/organization/{t}/not-updated"
+    },
+    {
+      "method": "PATCH",
+      "path": "/employer/administration/organization/{t}/update-password"
+    },
+    {
+      "method": "PATCH",
+      "path": "/employer/administration/vacancy/response/"
+    },
+    {
+      "method": "PATCH",
+      "path": "/iet/admin_discipline/"
+    },
+    {
+      "method": "PATCH",
+      "path": "/iet/admin_track/"
+    },
+    {
+      "method": "PATCH",
+      "path": "/iet/discipline_block/"
+    },
+    {
+      "method": "PATCH",
+      "path": "/iet/discipline_card/{t}/to_check"
+    },
+    {
+      "method": "PATCH",
+      "path": "/iet/discipline_year/"
+    },
+    {
+      "method": "PATCH",
+      "path": "/iet/moderation_discipline_card/"
+    },
+    {
+      "method": "PATCH",
+      "path": "/iet/moderation_discipline_card/{id}/reject"
+    },
+    {
+      "method": "PATCH",
+      "path": "/iet/moderation_discipline_card/{t}/approve"
+    },
+    {
+      "method": "PATCH",
+      "path": "/iet/moderation_student_choice/"
+    },
+    {
+      "method": "PATCH",
+      "path": "/iet/moderation_student_choice/student/{studentId}/track/{trackId}/approve"
+    },
+    {
+      "method": "PATCH",
+      "path": "/iet/moderation_student_choice/student/{studentId}/track/{trackId}/reject"
+    },
+    {
+      "method": "PATCH",
+      "path": "/iet/moderation_student_choice/student/{studentId}/track/{trackId}/remove-ready-test"
+    },
+    {
+      "method": "PATCH",
+      "path": "/iet/moderation_student_choice/student/{studentId}/track/{trackId}/select-ready-test"
+    },
+    {
+      "method": "PATCH",
+      "path": "/iet/moderation_student_choice/student/{t}/remove-all-selected-planing-disciplines"
+    },
+    {
+      "method": "PATCH",
+      "path": "/iet/moderation_student_choice/{t}/approve"
+    },
+    {
+      "method": "PATCH",
+      "path": "/iet/moderation_student_choice/{t}/reject"
+    },
+    {
+      "method": "PATCH",
+      "path": "/iet/semester/"
+    },
+    {
+      "method": "PATCH",
+      "path": "/iet/student/attach"
+    },
+    {
+      "method": "PATCH",
+      "path": "/iet/student_statement/{a}/recall"
+    },
+    {
+      "method": "PATCH",
+      "path": "/iet/teacher_discipline_card/{t}/to_check"
+    },
+    {
+      "method": "PATCH",
+      "path": "/individual-plan-work/"
+    },
+    {
+      "method": "PATCH",
+      "path": "/individual-plan-work/{a}/update-status"
+    },
+    {
+      "method": "PATCH",
+      "path": "/individual-plan/staff"
+    },
+    {
+      "method": "PATCH",
+      "path": "/monitoring/vacation/notify/"
+    },
+    {
+      "method": "PATCH",
+      "path": "/timetable/unified/building/dictionary/"
+    },
+    {
+      "method": "PATCH",
+      "path": "iet/student_discipline/{t}/attach"
+    },
+    {
+      "method": "PATCH",
+      "path": "iet/student_discipline/{t}/detach"
+    },
+    {
+      "method": "POST",
+      "path": "/chats"
+    },
+    {
+      "method": "POST",
+      "path": "/chats/"
+    },
+    {
+      "method": "POST",
+      "path": "/chats/{chatId}/message/{id}/important/create"
+    },
+    {
+      "method": "POST",
+      "path": "/chats/{chatId}/message/{id}/pinned/create"
+    },
+    {
+      "method": "POST",
+      "path": "/chats/{chat}/read"
+    },
+    {
+      "method": "POST",
+      "path": "/chats/{e}/important"
+    },
+    {
+      "method": "POST",
+      "path": "/employer/administration/news"
+    },
+    {
+      "method": "POST",
+      "path": "/employer/administration/organization"
+    },
+    {
+      "method": "POST",
+      "path": "/iet/admin_discipline"
+    },
+    {
+      "method": "POST",
+      "path": "/iet/admin_discipline_card"
+    },
+    {
+      "method": "POST",
+      "path": "/iet/admin_discipline_card/"
+    },
+    {
+      "method": "POST",
+      "path": "/iet/admin_route_without_access_group"
+    },
+    {
+      "method": "POST",
+      "path": "/iet/admin_track"
+    },
+    {
+      "method": "POST",
+      "path": "/iet/admin_without_access_group"
+    },
+    {
+      "method": "POST",
+      "path": "/iet/discipline_block"
+    },
+    {
+      "method": "POST",
+      "path": "/iet/discipline_card"
+    },
+    {
+      "method": "POST",
+      "path": "/iet/discipline_card/"
+    },
+    {
+      "method": "POST",
+      "path": "/iet/discipline_year"
+    },
+    {
+      "method": "POST",
+      "path": "/iet/moderation_discipline_card/"
+    },
+    {
+      "method": "POST",
+      "path": "/iet/semester"
+    },
+    {
+      "method": "POST",
+      "path": "/iet/student_statement/"
+    },
+    {
+      "method": "POST",
+      "path": "/iet/teacher_discipline_card"
+    },
+    {
+      "method": "POST",
+      "path": "/iet/teacher_discipline_card/"
+    },
+    {
+      "method": "POST",
+      "path": "/iet_timetable"
+    },
+    {
+      "method": "POST",
+      "path": "/individual-plan-work"
+    },
+    {
+      "method": "POST",
+      "path": "/individual-plan/staff/"
+    },
+    {
+      "method": "POST",
+      "path": "/monitoring/patent/subjectMatter"
+    },
+    {
+      "method": "POST",
+      "path": "/monitoring/patent/type"
+    },
+    {
+      "method": "POST",
+      "path": "/timetable/directories/groups-order"
+    },
+    {
+      "method": "POST",
+      "path": "/timetable/directories/semesters"
+    },
+    {
+      "method": "POST",
+      "path": "/timetable/extra-activities"
+    },
+    {
+      "method": "POST",
+      "path": "/timetable/lessons"
+    },
+    {
+      "method": "POST",
+      "path": "/timetable/unified/building/dictionary"
+    },
+    {
+      "method": "POST",
+      "path": "/timetable/unified/room/dictionary"
+    },
+    {
+      "method": "PUT",
+      "path": "/chats/"
+    },
+    {
+      "method": "PUT",
+      "path": "/chats/{chatId}/message/{messageId}"
+    },
+    {
+      "method": "PUT",
+      "path": "/employer/administration/vacancy/access"
+    },
+    {
+      "method": "PUT",
+      "path": "/iet_timetable/"
+    },
+    {
+      "method": "PUT",
+      "path": "/monitoring/patent/subjectMatter/"
+    },
+    {
+      "method": "PUT",
+      "path": "/monitoring/patent/type/"
+    },
+    {
+      "method": "PUT",
+      "path": "/study-load/staff/refresh"
+    },
+    {
+      "method": "PUT",
+      "path": "/timetable/directories/groups-order"
+    },
+    {
+      "method": "PUT",
+      "path": "/timetable/directories/semesters/"
+    },
+    {
+      "method": "PUT",
+      "path": "/timetable/extra-activities/"
+    },
+    {
+      "method": "PUT",
+      "path": "/timetable/lessons/"
+    },
+    {
+      "method": "PUT",
+      "path": "/timetable/unified/room/dictionary/"
+    },
+    {
+      "method": "PUT",
+      "path": "timetable/unified/room/tags/"
+    }
+  ]
+}
